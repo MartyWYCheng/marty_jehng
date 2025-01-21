@@ -1,0 +1,75 @@
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch main
+#
+# Initial commit
+#
+# Changes to be committed:
+#	new file:   .bash_history
+#	new file:   .bash_logout
+#	new file:   .bashrc
+#	new file:   .cache/Microsoft/DeveloperTools/deviceid
+#	new file:   .cache/cloud-code/api-metadata/code_snippets.csv
+#	new file:   .cache/cloud-code/api-metadata/libraries-bom_versions.xml
+#	new file:   .cache/cloud-code/api-metadata/libraries.csv
+#	new file:   .cache/cloud-code/api-metadata/products.csv
+#	new file:   .cache/cloud-code/install_id.txt
+#	new file:   .codeoss/cde_restorepath
+#	new file:   .codeoss/data/CachedProfilesData/__default__profile__/extensions.builtin.cache
+#	new file:   .codeoss/data/CachedProfilesData/__default__profile__/extensions.user.cache
+#	new file:   .codeoss/data/User/History/-422a496d/7QAP.json
+#	new file:   .codeoss/data/User/History/-422a496d/8EUS.json
+#	new file:   .codeoss/data/User/History/-422a496d/Mo5k.json
+#	new file:   .codeoss/data/User/History/-422a496d/entries.json
+#	new file:   .codeoss/data/User/History/-422a496d/o89T.json
+#	new file:   .codeoss/data/User/History/-422a496d/p4Be.json
+#	new file:   .codeoss/data/User/History/-422a496d/rPzo.json
+#	new file:   .codeoss/data/User/globalStorage/storage.json
+#	new file:   .codeoss/data/User/workspaceStorage/6d01ce19/vscode.lock
+#	new file:   .codeoss/data/User/workspaceStorage/7bb47b8f/vscode.lock
+#	new file:   .codeoss/data/logs/20250113T232526/exthost1/output_logging_20250113T232535/1-EditorConfig.log
+#	new file:   .codeoss/data/logs/20250113T232526/exthost1/output_logging_20250113T232535/2-Google Cloud CLI Installation.log
+#	new file:   .codeoss/data/logs/20250113T232526/exthost1/output_logging_20250113T232535/3-Apigee.log
+#	new file:   .codeoss/data/logs/20250113T232526/exthost1/output_logging_20250113T232535/4-Cloud Code Yaml Support.log
+#	new file:   .codeoss/data/logs/20250113T232526/exthost1/remoteexthost.log
+#	new file:   .codeoss/data/logs/20250113T232526/exthost1/vscode.git/Git.log
+#	new file:   .codeoss/data/logs/20250113T232526/exthost1/vscode.github/GitHub.log
+#	new file:   .codeoss/data/logs/20250113T232526/exthost1/vscode.json-language-features/JSON Language Server.log
+#	new file:   .codeoss/data/logs/20250113T232526/remoteagent.log
+#	new file:   .codeoss/data/logs/20250121T040452/exthost1/output_logging_20250121T040504/1-EditorConfig.log
+#	new file:   .codeoss/data/logs/20250121T040452/exthost1/output_logging_20250121T040504/2-Google Cloud CLI Installation.log
+#	new file:   .codeoss/data/logs/20250121T040452/exthost1/output_logging_20250121T040504/3-Apigee.log
+#	new file:   .codeoss/data/logs/20250121T040452/exthost1/output_logging_20250121T040504/4-Cloud Code Yaml Support.log
+#	new file:   .codeoss/data/logs/20250121T040452/exthost1/remoteexthost.log
+#	new file:   .codeoss/data/logs/20250121T040452/exthost1/vscode.git/Git.log
+#	new file:   .codeoss/data/logs/20250121T040452/exthost1/vscode.github/GitHub.log
+#	new file:   .codeoss/data/logs/20250121T040452/exthost1/vscode.json-language-features/JSON Language Server.log
+#	new file:   .codeoss/data/logs/20250121T040452/remoteagent.log
+#	new file:   .codeoss/data/token
+#	new file:   .codeoss/extensions/extensions.json
+#	new file:   .config/powershell/Microsoft.PowerShell_profile.ps1
+#	new file:   .docker/config.json
+#	new file:   .npm/_logs/2025-01-13T23_08_22_294Z-debug-0.log
+#	new file:   .npm/_logs/2025-01-13T23_25_30_943Z-debug-0.log
+#	new file:   .npm/_logs/2025-01-21T04_03_43_396Z-debug-0.log
+#	new file:   .npm/_logs/2025-01-21T04_04_55_736Z-debug-0.log
+#	new file:   .npm/_update-notifier-last-checked
+#	new file:   .profile
+#	new file:   .sudo_as_admin_successful
+#	new file:   .vscode/settings.json
+#	new file:   README-cloudshell.txt
+#
+# Changes not staged for commit:
+#	modified:   .bash_history
+#	modified:   .codeoss/data/User/History/-422a496d/entries.json
+#	modified:   .codeoss/data/logs/20250121T040452/exthost1/output_logging_20250121T040504/1-EditorConfig.log
+#	modified:   .codeoss/data/logs/20250121T040452/exthost1/vscode.git/Git.log
+#
+# Untracked files:
+#	.codeoss/data/User/History/-422a496d/Gkuw.json
+#	.codeoss/data/logs/20250121T040452/ptyhost.log
+#	.gitconfig
+#	.npm/_logs/2025-01-21T04_07_47_097Z-debug-0.log
+#
