@@ -49,19 +49,17 @@ def upload_audio():
 
         #
         #
-        # Modify this block to call the speech to text API
-        # Save transcript to same filename but .txt
+        # call the speech to text API
         from google.cloud import speech
         from google.protobuf import wrappers_pb2
 
         client=speech.SpeechClient()
-
         def sample_recognize(content):
             audio=speech.RecognitionAudio(content=content)
 
             config=speech.RecognitionConfig(
-            # encoding=speech.RecognitionConfig.AudioEncoding.MP3,
-            # sample_rate_hertz=24000,
+            encoding=speech.RecognitionConfig.AudioEncoding.MP3,
+            sample_rate_hertz=24000,
             language_code="en-US",
             model="latest_long",
             audio_channel_count=1,
@@ -79,15 +77,20 @@ def upload_audio():
 
             return txt
 
+        #read audio file
         f = open(filename,'rb')
         data = f.read()
         f.close()
-
+        #speech to text
         text = sample_recognize(data)
-
-        f = open(filename+'.txt','w')
+        # Save transcript to same filename but .txt
+        f = open(filename.replace(".wav", ".txt"),'w')
         f.write(text)
         f.close()
+
+        #filename = datetime.now().strftime("%Y%m%d-%I%M%S%p") + '.wav'
+        file_path = os.path.join(app.config['UPLOAD_FOLDER'], f)
+        file.save(file_path)
         #
         #
 
