@@ -51,6 +51,43 @@ def upload_audio():
         #
         # Modify this block to call the speech to text API
         # Save transcript to same filename but .txt
+        from google.cloud import speech
+        from google.protobuf import wrappers_pb2
+
+        client=speech.SpeechClient()
+
+        def sample_recognize(content):
+            audio=speech.RecognitionAudio(content=content)
+
+            config=speech.RecognitionConfig(
+            # encoding=speech.RecognitionConfig.AudioEncoding.MP3,
+            # sample_rate_hertz=24000,
+            language_code="en-US",
+            model="latest_long",
+            audio_channel_count=1,
+            enable_word_confidence=True,
+            enable_word_time_offsets=True,
+            )
+
+            operation=client.long_running_recognize(config=config, audio=audio)
+
+            response=operation.result(timeout=90)
+
+            txt = ''
+            for result in response.results:
+                txt = txt + result.alternatives[0].transcript + '\n'
+
+            return txt
+
+        f = open(filename,'rb')
+        data = f.read()
+        f.close()
+
+        text = sample_recognize(data)
+
+        f = open(filename+'.txt','w')
+        f.write(text)
+        f.close()
         #
         #
 

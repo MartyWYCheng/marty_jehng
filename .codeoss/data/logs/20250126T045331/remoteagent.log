@@ -7,3 +7,8 @@
 2025-01-26 04:53:36.410 [info] [127.0.0.1][c6f4d374][ManagementConnection] New connection established.
 2025-01-26 04:53:36.413 [info] [127.0.0.1][4549535b][ExtensionHostConnection] New connection established.
 2025-01-26 04:53:37.662 [info] [127.0.0.1][4549535b][ExtensionHostConnection] <1196> Launched Extension Host Process.
+2025-01-26 05:29:47.140 [info] [127.0.0.1][c6f4d374][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2025-01-26 05:29:51.516 [info] [127.0.0.1][120700be][ManagementConnection] New connection established.
+2025-01-26 05:29:51.526 [info] [127.0.0.1][8807aa3b][ExtensionHostConnection] New connection established.
+2025-01-26 05:29:51.531 [info] [127.0.0.1][8807aa3b][ExtensionHostConnection] <3998> Launched Extension Host Process.
+2025-01-26 05:34:51.964 [info] [127.0.0.1][4549535b][ExtensionHostConnection] <1196> Extension Host Process exited with code: 0, signal: null.
