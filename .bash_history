@@ -29,3 +29,9 @@ gcloud auth application-default set-quota-project wcheng2014-cot5930-project1
 gcloud auth application-default login
 gcloud auth application-default set-quota-project wcheng2014-cot5930-project1
 python main.py
+python3 -m pip install google-cloud-texttospeech
+python main.py
+python3 -m pip install google-cloud-texttospeech
+python main.py
+gcloud run deploy
+--project
