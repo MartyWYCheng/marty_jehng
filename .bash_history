@@ -25,3 +25,7 @@ sudo netstat -tulnp | grep :5000
 sudo kill -9 3598
 sudo netstat -tulnp | grep :5000
 python main.py
+gcloud auth application-default set-quota-project wcheng2014-cot5930-project1
+gcloud auth application-default login
+gcloud auth application-default set-quota-project wcheng2014-cot5930-project1
+python main.py
