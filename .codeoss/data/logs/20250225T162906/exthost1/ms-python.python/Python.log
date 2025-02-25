@@ -1,0 +1,34 @@
+2025-02-25 16:29:30.075 [warning] Dir "/home/marty_jehng/.pixi/envs" is not watchable (directory does not exist)
+2025-02-25 16:29:30.141 [info] Python interpreter path: /bin/python
+2025-02-25 16:29:30.315 [info] > pyenv which python
+2025-02-25 16:29:30.315 [info] cwd: .
+2025-02-25 16:29:35.482 [info] Starting Jedi language server for marty_jehng.
+2025-02-25 16:31:59.744 [info] Discover tests for workspace name: marty_jehng - uri: /home/marty_jehng/main.py
+2025-02-25 16:32:01.110 [info] Discover tests for workspace name: marty_jehng - uri: /home/marty_jehng/main.py
+2025-02-25 16:32:03.987 [info] Discover tests for workspace name: marty_jehng - uri: /home/marty_jehng/main.py
+2025-02-25 16:32:08.026 [info] Discover tests for workspace name: marty_jehng - uri: /home/marty_jehng/main.py
+2025-02-25 16:32:10.070 [info] Discover tests for workspace name: marty_jehng - uri: /home/marty_jehng/main.py
+2025-02-25 16:32:25.681 [info] Discover tests for workspace name: marty_jehng - uri: /home/marty_jehng/main.py
+2025-02-25 16:32:28.349 [info] Discover tests for workspace name: marty_jehng - uri: /home/marty_jehng/main.py
+2025-02-25 16:32:32.827 [info] Discover tests for workspace name: marty_jehng - uri: /home/marty_jehng/main.py
+2025-02-25 16:33:31.811 [info] Discover tests for workspace name: marty_jehng - uri: /home/marty_jehng/main.py
+2025-02-25 16:33:32.117 [info] Discover tests for workspace name: marty_jehng - uri: /home/marty_jehng/main.py
+2025-02-25 16:33:36.690 [info] Discover tests for workspace name: marty_jehng - uri: /home/marty_jehng/main.py
+2025-02-25 16:33:39.875 [info] Discover tests for workspace name: marty_jehng - uri: /home/marty_jehng/main.py
+2025-02-25 16:33:44.448 [info] Discover tests for workspace name: marty_jehng - uri: /home/marty_jehng/main.py
+2025-02-25 16:33:55.780 [info] Discover tests for workspace name: marty_jehng - uri: /home/marty_jehng/main.py
+2025-02-25 16:35:45.033 [info] Discover tests for workspace name: marty_jehng - uri: /home/marty_jehng/main.py
+2025-02-25 16:35:48.032 [info] Discover tests for workspace name: marty_jehng - uri: /home/marty_jehng/main.py
+2025-02-25 16:37:22.449 [info] Discover tests for workspace name: marty_jehng - uri: /home/marty_jehng/main.py
+2025-02-25 16:39:28.829 [info] Discover tests for workspace name: marty_jehng - uri: /home/marty_jehng/main.py
+2025-02-25 16:39:32.133 [info] Discover tests for workspace name: marty_jehng - uri: /home/marty_jehng/main.py
+2025-02-25 16:39:57.045 [info] Discover tests for workspace name: marty_jehng - uri: /home/marty_jehng/main.py
+2025-02-25 16:40:13.582 [info] Discover tests for workspace name: marty_jehng - uri: /home/marty_jehng/main.py
+2025-02-25 16:40:15.142 [info] Discover tests for workspace name: marty_jehng - uri: /home/marty_jehng/main.py
+2025-02-25 16:40:17.886 [info] Discover tests for workspace name: marty_jehng - uri: /home/marty_jehng/main.py
+2025-02-25 16:40:36.257 [info] Discover tests for workspace name: marty_jehng - uri: /home/marty_jehng/main.py
+2025-02-25 16:40:38.661 [info] Discover tests for workspace name: marty_jehng - uri: /home/marty_jehng/main.py
+2025-02-25 16:40:58.519 [info] Discover tests for workspace name: marty_jehng - uri: /home/marty_jehng/main.py
+2025-02-25 16:41:36.964 [info] Send text to terminal: /bin/python /home/marty_jehng/main.py
+2025-02-25 16:41:37.102 [info] Send text to terminal: /bin/python /home/marty_jehng/main.py
+2025-02-25 16:50:58.726 [info] Discover tests for workspace name: undefined - uri: /User/settings.json

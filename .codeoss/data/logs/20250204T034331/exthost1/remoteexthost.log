@@ -1,0 +1,28 @@
+2025-02-04 03:43:41.733 [info] Extension host with pid 1197 started
+2025-02-04 03:43:41.751 [error] Error: EEXIST: file already exists, open '/home/marty_jehng/.codeoss/data/User/workspaceStorage/7bb47b8f/vscode.lock'
+2025-02-04 03:43:41.762 [info] Lock '/home/marty_jehng/.codeoss/data/User/workspaceStorage/7bb47b8f/vscode.lock': Could not acquire lock, checking if the file is stale.
+2025-02-04 03:43:41.763 [info] Lock '/home/marty_jehng/.codeoss/data/User/workspaceStorage/7bb47b8f/vscode.lock': The lock looks stale, waiting for 2s.
+2025-02-04 03:43:42.358 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2025-02-04 03:43:42.371 [info] ExtensionService#_doActivateExtension ms-python.python, startup: true, activationEvent: 'workspaceContains:requirements.txt'
+2025-02-04 03:43:43.139 [info] ExtensionService#_doActivateExtension redhat.fabric8-analytics, startup: true, activationEvent: 'workspaceContains:**/package.json,**/pom.xml,**/go.mod,**/requirements.txt,**/build.gradle,**/Dockerfile,**/Containerfile'
+2025-02-04 03:43:43.763 [info] Lock '/home/marty_jehng/.codeoss/data/User/workspaceStorage/7bb47b8f/vscode.lock': The lock looks stale even after waiting for 2s.
+2025-02-04 03:43:43.763 [info] Lock '/home/marty_jehng/.codeoss/data/User/workspaceStorage/7bb47b8f/vscode.lock': Deleting a stale lock.
+2025-02-04 03:43:43.770 [info] Lock '/home/marty_jehng/.codeoss/data/User/workspaceStorage/7bb47b8f/vscode.lock': Lock acquired.
+2025-02-04 03:43:43.941 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2025-02-04 03:43:43.942 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2025-02-04 03:43:44.093 [error] Error: spawn /google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python-env-tools/bin/pet ENOENT
+	at ChildProcess._handle.onexit (node:internal/child_process:286:19)
+	at onErrorNT (node:internal/child_process:484:16)
+	at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+2025-02-04 03:43:44.279 [info] Eager extensions activated
+2025-02-04 03:43:44.280 [info] ExtensionService#_doActivateExtension EditorConfig.EditorConfig, startup: false, activationEvent: 'onStartupFinished'
+2025-02-04 03:43:44.280 [info] ExtensionService#_doActivateExtension google.cloud-shell, startup: false, activationEvent: 'onStartupFinished'
+2025-02-04 03:43:44.281 [info] ExtensionService#_doActivateExtension google.geminicodeassist, startup: false, activationEvent: 'onStartupFinished', root cause: googlecloudtools.cloudcode
+2025-02-04 03:43:44.281 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2025-02-04 03:43:44.282 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2025-02-04 03:43:46.771 [info] ExtensionService#_doActivateExtension googlecloudtools.cloudcode, startup: false, activationEvent: 'onStartupFinished'
+2025-02-04 03:43:49.678 [info] ExtensionService#_doActivateExtension vscode.configuration-editing, startup: false, activationEvent: 'onLanguage:jsonc'
+2025-02-04 03:43:49.678 [info] ExtensionService#_doActivateExtension vscode.json-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2025-02-04 03:43:49.679 [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2025-02-04 03:43:49.680 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2025-02-04 03:43:50.200 [info] ExtensionService#_doActivateExtension vscode.github-authentication, startup: false, activationEvent: 'onAuthenticationRequest:github'
