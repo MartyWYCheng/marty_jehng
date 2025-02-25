@@ -2551,3 +2551,4 @@ I0128 04:09:08.294591   15720 conversation.go:559] Unable to retrieve excluded f
 I0128 04:09:08.294654   15720 rag_cache.go:821] Retrieving and scoring colocated and open files
 I0128 04:09:08.294665   15720 rag_cache.go:851] rerankByLangBoost=0
 I0128 04:09:48.290517   15720 life_cycle.go:297] codeReportEvery: recomputing codereport metric
+I0128 04:17:48.290379   15720 life_cycle.go:261] codeReportBasicEvery: recomputing codereportbasic metric

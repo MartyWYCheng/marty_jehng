@@ -35,3 +35,7 @@ python3 -m pip install google-cloud-texttospeech
 python main.py
 gcloud run deploy
 --project
+gcloud run deploy
+gcloud run deploy --project
+gcloud init
+gcloud run deploy
