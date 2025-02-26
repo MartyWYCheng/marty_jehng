@@ -49,3 +49,15 @@ gcloud auth application-default login
 python main.py
 /bin/python /home/marty_jehng/main.py
 python main.py
+gcloud run deploy
+gcloud run deploy --source
+gcloud run deploy --project
+gcloud run deploy
+python main.py
+gcloud run deploy
+gcloud init
+gcloud auth application-default login
+gcloud run deploy
+pip install google-cloud-language
+python main.py
+gcloud run deploy
