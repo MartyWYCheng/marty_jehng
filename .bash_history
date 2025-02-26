@@ -48,3 +48,4 @@ gcloud auth application-default set-quota-project wcheng2014-cot5930-project1
 gcloud auth application-default login
 python main.py
 /bin/python /home/marty_jehng/main.py
+python main.py

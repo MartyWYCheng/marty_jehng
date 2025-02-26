@@ -1,0 +1,126 @@
+2025-02-26 04:00:09.632 [info] WARNING:pygls.protocol.json_rpc:Cancel notification for unknown message id "1"
+
+2025-02-26 04:00:16.567 [info] WARNING:pygls.protocol.json_rpc:Cancel notification for unknown message id "6"
+
+2025-02-26 04:01:57.434 [info] WARNING:pygls.protocol.json_rpc:Cancel notification for unknown message id "38"
+
+2025-02-26 04:01:59.665 [info] WARNING:pygls.protocol.json_rpc:Cancel notification for unknown message id "40"
+
+2025-02-26 04:04:44.940 [info] WARNING:pygls.protocol.json_rpc:Cancel notification for unknown message id "102"
+
+2025-02-26 04:04:44.940 [info] WARNING:pygls.protocol.json_rpc:Cancel notification for unknown message id "101"
+
+2025-02-26 04:05:08.515 [info] WARNING:pygls.protocol.json_rpc:Cancel notification for unknown message id "122"
+
+2025-02-26 04:05:13.029 [info] WARNING:pygls.protocol.json_rpc:Cancel notification for unknown message id "125"
+
+2025-02-26 04:05:13.033 [info] WARNING:pygls.protocol.json_rpc:Cancel notification for unknown message id "126"
+
+2025-02-26 04:05:13.035 [info] WARNING:pygls.protocol.json_rpc:Cancel notification for unknown message id "127"
+
+2025-02-26 04:05:13.241 [info] WARNING:pygls.protocol.json_rpc:Cancel notification for unknown message id "130"
+
+2025-02-26 04:05:13.276 [info] WARNING:pygls.protocol.json_rpc:Cancel notification for unknown message id "132"
+
+2025-02-26 04:05:13.399 [info] WARNING:pygls.protocol.json_rpc:Cancel notification for unknown message id "131"
+
+2025-02-26 04:05:13.440 [info] WARNING:pygls.protocol.json_rpc:Cancel notification for unknown message id "134"
+
+2025-02-26 04:05:13.480 [info] WARNING:pygls.protocol.json_rpc:Cancel notification for unknown message id "135"
+
+2025-02-26 04:05:29.148 [info] WARNING:pygls.protocol.json_rpc:Cancel notification for unknown message id "157"
+WARNING:pygls.protocol.json_rpc:Cancel notification for unknown message id "155"
+
+2025-02-26 04:05:29.344 [info] WARNING:pygls.protocol.json_rpc:Cancel notification for unknown message id "159"
+
+2025-02-26 04:05:29.344 [info] WARNING:pygls.protocol.json_rpc:Cancel notification for unknown message id "156"
+
+2025-02-26 04:05:29.388 [info] WARNING:pygls.protocol.json_rpc:Cancel notification for unknown message id "161"
+
+2025-02-26 04:05:29.389 [info] WARNING:pygls.protocol.json_rpc:Cancel notification for unknown message id "162"
+
+2025-02-26 04:05:41.238 [info] WARNING:pygls.protocol.json_rpc:Cancel notification for unknown message id "176"
+
+2025-02-26 04:05:41.270 [info] WARNING:pygls.protocol.json_rpc:Cancel notification for unknown message id "177"
+
+2025-02-26 04:05:58.388 [info] WARNING:pygls.protocol.json_rpc:Cancel notification for unknown message id "182"
+
+2025-02-26 04:06:14.760 [info] WARNING:pygls.protocol.json_rpc:Cancel notification for unknown message id "213"
+
+2025-02-26 04:06:35.400 [info] WARNING:pygls.protocol.json_rpc:Cancel notification for unknown message id "223"
+
+2025-02-26 04:06:35.508 [info] WARNING:pygls.protocol.json_rpc:Cancel notification for unknown message id "224"
+
+2025-02-26 04:13:00.135 [info] WARNING:pygls.protocol.json_rpc:Cancel notification for unknown message id "229"
+
+2025-02-26 04:13:03.164 [info] WARNING:pygls.protocol.json_rpc:Cancel notification for unknown message id "232"
+
+2025-02-26 04:14:40.772 [info] WARNING:pygls.protocol.json_rpc:Cancel notification for unknown message id "248"
+
+2025-02-26 04:14:45.729 [info] WARNING:pygls.protocol.json_rpc:Cancel notification for unknown message id "250"
+
+2025-02-26 04:15:25.510 [info] WARNING:pygls.protocol.json_rpc:Cancel notification for unknown message id "258"
+
+2025-02-26 04:15:32.248 [info] WARNING:pygls.protocol.json_rpc:Cancel notification for unknown message id "260"
+
+2025-02-26 04:16:01.133 [info] WARNING:pygls.protocol.json_rpc:Cancel notification for unknown message id "266"
+
+2025-02-26 04:16:01.133 [info] WARNING:pygls.protocol.json_rpc:Cancel notification for unknown message id "268"
+
+2025-02-26 04:16:01.294 [info] WARNING:pygls.protocol.json_rpc:Cancel notification for unknown message id "269"
+
+2025-02-26 04:16:11.260 [info] WARNING:pygls.protocol.json_rpc:Cancel notification for unknown message id "279"
+
+2025-02-26 04:16:16.963 [info] WARNING:pygls.protocol.json_rpc:Cancel notification for unknown message id "289"
+
+2025-02-26 04:16:21.744 [info] WARNING:pygls.protocol.json_rpc:Cancel notification for unknown message id "296"
+
+2025-02-26 04:16:26.762 [info] WARNING:pygls.protocol.json_rpc:Cancel notification for unknown message id "304"
+
+2025-02-26 04:17:30.918 [info] WARNING:pygls.protocol.json_rpc:Cancel notification for unknown message id "322"
+
+2025-02-26 04:17:30.918 [info] WARNING:pygls.protocol.json_rpc:Cancel notification for unknown message id "321"
+
+2025-02-26 04:17:30.938 [info] <unknown>:208: SyntaxWarning: invalid escape sequence '\m'
+
+2025-02-26 04:17:30.952 [info] <unknown>:163: SyntaxWarning: invalid escape sequence '\m'
+
+2025-02-26 04:17:31.040 [info] WARNING:pygls.protocol.json_rpc:Cancel notification for unknown message id "326"
+
+2025-02-26 04:17:31.087 [info] <unknown>:208: SyntaxWarning: invalid escape sequence '\m'
+<unknown>:210: SyntaxWarning: invalid escape sequence '\m'
+
+2025-02-26 04:17:31.102 [info] <unknown>:163: SyntaxWarning: invalid escape sequence '\m'
+
+2025-02-26 04:17:31.102 [info] <unknown>:212: SyntaxWarning: invalid escape sequence '\m'
+
+2025-02-26 04:17:32.080 [info] file:///home/marty_jehng/main.py:208: SyntaxWarning: invalid escape sequence '\m'
+
+2025-02-26 04:17:32.081 [info] file:///home/marty_jehng/main.py:210: SyntaxWarning: invalid escape sequence '\m'
+
+2025-02-26 04:17:32.950 [info] <unknown>:208: SyntaxWarning: invalid escape sequence '\m'
+
+2025-02-26 04:17:32.965 [info] <unknown>:212: SyntaxWarning: invalid escape sequence '\m'
+
+2025-02-26 04:17:34.086 [info] file:///home/marty_jehng/main.py:208: SyntaxWarning: invalid escape sequence '\m'
+
+2025-02-26 04:17:34.102 [info] <unknown>:208: SyntaxWarning: invalid escape sequence '\m'
+
+2025-02-26 04:17:34.115 [info] <unknown>:163: SyntaxWarning: invalid escape sequence '\m'
+
+2025-02-26 04:17:43.309 [info] WARNING:pygls.protocol.json_rpc:Cancel notification for unknown message id "346"
+
+2025-02-26 04:17:43.487 [info] WARNING:pygls.protocol.json_rpc:Cancel notification for unknown message id "348"
+
+2025-02-26 04:17:43.488 [info] WARNING:pygls.protocol.json_rpc:Cancel notification for unknown message id "350"
+
+2025-02-26 04:17:43.488 [info] WARNING:pygls.protocol.json_rpc:Cancel notification for unknown message id "347"
+
+2025-02-26 04:17:43.496 [info] WARNING:pygls.protocol.json_rpc:Cancel notification for unknown message id "349"
+
+2025-02-26 04:17:48.030 [info] WARNING:pygls.protocol.json_rpc:Cancel notification for unknown message id "361"
+
+2025-02-26 04:17:48.030 [info] WARNING:pygls.protocol.json_rpc:Cancel notification for unknown message id "362"
+
+2025-02-26 04:17:48.032 [info] WARNING:pygls.protocol.json_rpc:Cancel notification for unknown message id "363"
+
