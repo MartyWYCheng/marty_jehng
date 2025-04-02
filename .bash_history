@@ -61,3 +61,26 @@ gcloud run deploy
 pip install google-cloud-language
 python main.py
 gcloud run deploy
+pytho n main.py
+python main.py
+gcloud auth application-default set-quota-project wcheng2014-cot5930-project1
+gcloud auth application-default login
+gcloud auth application-default set-quota-project wcheng2014-cot5930-project1
+python main.py
+gcloud auth application-default set-quota-project wcheng2014-cot5930-project1
+gcloud auth application-default login
+gcloud auth application-default set-quota-project wcheng2014-cot5930-project1
+python main.py
+pip install google-genai
+python main.py
+pip freeze | grep genai
+python main.py
+export GEMINI_API_KEY=AIzaSyAiqDJu8sel0TtJ4vbRCCCzQwiFLiMef8E
+python main.py
+gcloud run deploy
+gcloud run deploy --source
+gcloud run deploy
+--project wcheng2014-cot5930-project1
+/bin/python /home/marty_jehng/main.py
+ls
+gcloud run deploy

@@ -1,0 +1,5 @@
+2025-04-02 17:12:50.275 [warning] Dir "/home/marty_jehng/.pixi/envs" is not watchable (directory does not exist)
+2025-04-02 17:12:50.445 [info] Python interpreter path: /bin/python
+2025-04-02 17:12:50.737 [info] > pyenv which python
+2025-04-02 17:12:50.737 [info] cwd: .
+2025-04-02 17:13:00.046 [info] Starting Jedi language server for marty_jehng.

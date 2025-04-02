@@ -1,0 +1,37 @@
+2025-04-01 14:08:32.463 [info] WARNING:pygls.protocol.json_rpc:Cancel notification for unknown message id "3"
+WARNING:pygls.protocol.json_rpc:Cancel notification for unknown message id "2"
+
+2025-04-01 14:12:04.742 [info] WARNING:pygls.protocol.json_rpc:Cancel notification for unknown message id "13"
+
+2025-04-01 14:13:18.167 [info] WARNING:pygls.protocol.json_rpc:Cancel notification for unknown message id "25"
+
+2025-04-01 14:14:10.634 [info] WARNING:pygls.protocol.json_rpc:Cancel notification for unknown message id "60"
+
+2025-04-01 14:15:49.365 [info] WARNING:pygls.protocol.json_rpc:Cancel notification for unknown message id "96"
+
+2025-04-01 14:15:49.367 [info] WARNING:pygls.protocol.json_rpc:Cancel notification for unknown message id "97"
+
+2025-04-01 14:15:57.127 [info] WARNING:pygls.protocol.json_rpc:Cancel notification for unknown message id "103"
+
+2025-04-01 14:16:32.223 [info] WARNING:pygls.protocol.json_rpc:Cancel notification for unknown message id "147"
+
+2025-04-01 14:16:52.556 [info] WARNING:pygls.protocol.json_rpc:Cancel notification for unknown message id "171"
+
+2025-04-01 14:16:53.061 [info] WARNING:pygls.protocol.json_rpc:Cancel notification for unknown message id "174"
+
+2025-04-01 14:17:35.054 [info] WARNING:pygls.protocol.json_rpc:Cancel notification for unknown message id "184"
+
+2025-04-01 14:17:47.530 [info] WARNING:pygls.protocol.json_rpc:Cancel notification for unknown message id "231"
+
+2025-04-01 14:17:56.598 [info] WARNING:pygls.protocol.json_rpc:Cancel notification for unknown message id "248"
+
+2025-04-01 14:17:56.598 [info] WARNING:pygls.protocol.json_rpc:Cancel notification for unknown message id "249"
+
+2025-04-01 14:17:56.602 [info] WARNING:pygls.protocol.json_rpc:Cancel notification for unknown message id "251"
+
+2025-04-01 14:17:59.287 [info] WARNING:pygls.protocol.json_rpc:Cancel notification for unknown message id "258"
+
+2025-04-01 14:17:59.335 [info] WARNING:pygls.protocol.json_rpc:Cancel notification for unknown message id "259"
+
+2025-04-01 14:18:31.526 [info] WARNING:pygls.protocol.json_rpc:Cancel notification for unknown message id "270"
+

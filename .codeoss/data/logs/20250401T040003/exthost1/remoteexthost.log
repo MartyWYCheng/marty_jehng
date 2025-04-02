@@ -1,0 +1,5 @@
+2025-04-01 04:01:28.370 [info] Extension host with pid 1223 started
+2025-04-01 04:01:28.382 [info] Lock '/home/marty_jehng/.codeoss/data/User/workspaceStorage/-116e28db/vscode.lock': Lock acquired.
+2025-04-01 04:18:37.739 [info] Extension host terminating: renderer disconnected for too long (2)
+2025-04-01 04:18:37.740 [info] Lock '/home/marty_jehng/.codeoss/data/User/workspaceStorage/-116e28db/vscode.lock': Marking the lockfile as scheduled to be released in 6000 ms.
+2025-04-01 04:18:37.742 [info] Extension host with pid 1223 exiting with code 0

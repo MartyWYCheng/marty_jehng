@@ -1,0 +1,14 @@
+2025-04-01 14:20:41.347 [warning] Dir "/home/marty_jehng/.pixi/envs" is not watchable (directory does not exist)
+2025-04-01 14:20:43.827 [info] Python interpreter path: /bin/python
+2025-04-01 14:20:44.062 [info] > pyenv which python
+2025-04-01 14:20:44.062 [info] cwd: .
+2025-04-01 14:20:51.785 [info] Starting Jedi language server for marty_jehng.
+2025-04-01 14:21:11.133 [info] Discover tests for workspace name: marty_jehng - uri: /home/marty_jehng/main.py
+2025-04-01 14:21:42.986 [info] Discover tests for workspace name: marty_jehng - uri: /home/marty_jehng/main.py
+2025-04-01 14:21:50.258 [info] Discover tests for workspace name: marty_jehng - uri: /home/marty_jehng/main.py
+2025-04-01 14:21:52.113 [info] Discover tests for workspace name: marty_jehng - uri: /home/marty_jehng/main.py
+2025-04-01 14:25:55.604 [info] Discover tests for workspace name: marty_jehng - uri: /home/marty_jehng/main.py
+2025-04-01 14:27:23.045 [info] Discover tests for workspace name: marty_jehng - uri: /home/marty_jehng/main.py
+2025-04-01 14:27:24.367 [info] Discover tests for workspace name: marty_jehng - uri: /home/marty_jehng/main.py
+2025-04-01 14:27:26.280 [info] Discover tests for workspace name: marty_jehng - uri: /home/marty_jehng/main.py
+2025-04-01 14:29:27.946 [info] Discover tests for workspace name: marty_jehng - uri: /home/marty_jehng/main.py

@@ -1,0 +1,13 @@
+2025-03-24 21:09:05.149 [warning] Dir "/home/marty_jehng/.pixi/envs" is not watchable (directory does not exist)
+2025-03-24 21:09:07.906 [info] > /bin/python -I /google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/get_output_via_markers.py /google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/interpreterInfo.py
+2025-03-24 21:09:07.987 [info] Python interpreter path: /bin/python
+2025-03-24 21:09:40.760 [info] > pyenv which python
+2025-03-24 21:09:40.760 [info] cwd: .
+2025-03-24 21:09:46.020 [info] Starting Jedi language server for marty_jehng.
+2025-03-24 21:12:09.896 [info] Discover tests for workspace name: marty_jehng - uri: /home/marty_jehng/main copy.py
+2025-03-24 21:12:12.958 [info] Discover tests for workspace name: marty_jehng - uri: /home/marty_jehng/main copy.py
+2025-03-24 21:12:20.906 [info] Discover tests for workspace name: marty_jehng - uri: /home/marty_jehng/main copy.py
+2025-03-24 21:12:34.459 [info] Discover tests for workspace name: marty_jehng - uri: /home/marty_jehng/main copy.py
+2025-03-24 21:12:41.008 [info] Discover tests for workspace name: marty_jehng - uri: /home/marty_jehng/main copy.py
+2025-03-24 21:13:34.601 [info] Discover tests for workspace name: marty_jehng - uri: /home/marty_jehng/main copy.py
+2025-03-24 21:20:10.152 [info] Discover tests for workspace name: marty_jehng - uri: /home/marty_jehng/main copy.py

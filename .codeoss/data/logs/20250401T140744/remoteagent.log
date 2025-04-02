@@ -1,0 +1,26 @@
+2025-04-01 14:07:44.217 [info] 
+
+
+
+
+2025-04-01 14:07:44.217 [info] Extension host agent started.
+2025-04-01 14:07:47.409 [info] [127.0.0.1][bd7321ad][ManagementConnection] New connection established.
+2025-04-01 14:07:47.414 [info] [127.0.0.1][98fe32b6][ExtensionHostConnection] New connection established.
+2025-04-01 14:07:48.665 [info] [127.0.0.1][98fe32b6][ExtensionHostConnection] <1206> Launched Extension Host Process.
+2025-04-01 14:19:45.376 [info] [127.0.0.1][bd7321ad][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2025-04-01 14:20:18.672 [info] [127.0.0.1][4824bb10][ExtensionHostConnection] New connection established.
+2025-04-01 14:20:18.678 [info] [127.0.0.1][4824bb10][ExtensionHostConnection] <2927> Launched Extension Host Process.
+2025-04-01 14:20:18.680 [info] [127.0.0.1][a6cb4ff3][ManagementConnection] New connection established.
+2025-04-01 14:25:19.160 [info] [127.0.0.1][98fe32b6][ExtensionHostConnection] <1206> Extension Host Process exited with code: 0, signal: null.
+2025-04-01 14:31:19.265 [info] [127.0.0.1][a6cb4ff3][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2025-04-01 14:31:43.695 [info] [127.0.0.1][b96e30c3][ManagementConnection] New connection established.
+2025-04-01 14:31:43.697 [info] [127.0.0.1][b77d453a][ExtensionHostConnection] New connection established.
+2025-04-01 14:31:43.701 [info] [127.0.0.1][b77d453a][ExtensionHostConnection] <3972> Launched Extension Host Process.
+2025-04-01 14:36:44.192 [info] [127.0.0.1][4824bb10][ExtensionHostConnection] <2927> Extension Host Process exited with code: 0, signal: null.
+2025-04-01 14:47:11.260 [warning] [File Watcher (node.js)] Watcher shutdown because watched path got deleted
+2025-04-01 14:47:47.566 [info] [127.0.0.1][b96e30c3][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2025-04-01 14:48:08.947 [info] [127.0.0.1][fbdd2018][ExtensionHostConnection] New connection established.
+2025-04-01 14:48:08.956 [info] [127.0.0.1][fbdd2018][ExtensionHostConnection] <5228> Launched Extension Host Process.
+2025-04-01 14:48:08.959 [info] [127.0.0.1][b3c2360b][ManagementConnection] New connection established.
+2025-04-01 14:53:09.413 [info] [127.0.0.1][b77d453a][ExtensionHostConnection] <3972> Extension Host Process exited with code: 0, signal: null.
+2025-04-01 15:01:46.573 [warning] [File Watcher (node.js)] Watcher shutdown because watched path got deleted

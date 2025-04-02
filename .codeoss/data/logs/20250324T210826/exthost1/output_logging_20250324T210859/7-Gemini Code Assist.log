@@ -1,0 +1,689 @@
+language client is not ready, cannot initialize chat state
+I0324 21:09:59.266315    2082 serve.go:43] cloudcode_cli (Feb 19 2025 21:00:54 -0800, cl:728935864 baseline:726298444)
+I0324 21:09:59.266408    2082 serve.go:44] Command line: ["/home/marty_jehng/.cache/cloud-code/cloudcode_cli/cloudcode_cli/6e759dbf/cloudcode_cli" "duet" "-logtostderr"]
+I0324 21:09:59.268367    2082 life_cycle.go:166] Initializing. Architecture: "amd64", Operating system: "linux"
+I0324 21:09:59.392414    2082 configuration.go:182] product updateChannel will be used
+I0324 21:09:59.392472    2082 configuration.go:642] language thresholds: map[]
+I0324 21:09:59.392493    2082 configuration.go:600] dataFileExtensions array: [.csv .tsv .jsonl]
+I0324 21:09:59.392519    2082 configuration.go:853] atlas codeCompletion llm options: {MaxTokens:64 Temp:0.2 Samples:4 EnablePrompt:<nil> PromptOverride: PostProcess:0xc001005d4d StopSequences:map[] DataFilePromptLines:0}
+I0324 21:09:59.392556    2082 configuration.go:853] atlas codeGeneration llm options: {MaxTokens:512 Temp:0.2 Samples:4 EnablePrompt:<nil> PromptOverride: PostProcess:0xc001005d6d StopSequences:map[*:[[eod] [EOF] [pre] [suf] [mid]]] DataFilePromptLines:5}
+I0324 21:09:59.392708    2082 configuration.go:270] Configured settings for atlasOpts: {"Addr":"","QuotaProject":"","Project":"cloudshell-gca","LogPrompt":true,"UseTypeoverCache":true,"EnablePromptEnhancementForTransform":false,"EnablePromptEnhancementForChat":false,"EnableAdminCitationBlock":false,"EnableChatStreaming":false,"Complete":{"MaxTokens":64,"Temp":0.2,"Samples":4,"EnablePrompt":null,"PromptOverride":"","PostProcess":true,"StopSequences":null,"DataFilePromptLines":0},"Generate":{"MaxTokens":512,"Temp":0.2,"Samples":4,"EnablePrompt":null,"PromptOverride":"","PostProcess":true,"StopSequences":{"*":["[eod]","[EOF]","[pre]","[suf]","[mid]"]},"DataFilePromptLines":5},"DataFileExtensions":[".csv",".tsv",".jsonl"]}
+I0324 21:09:59.392761    2082 configuration.go:278] Configured settings for cloudCodeOpts: {"Addr":"","QuotaProject":"","Project":"cloudshell-gca","LogPrompt":true,"UseTypeoverCache":true,"EnablePromptEnhancementForTransform":false,"EnablePromptEnhancementForChat":false,"EnableAdminCitationBlock":false,"EnableChatStreaming":false}
+I0324 21:09:59.392772    2082 configuration.go:282] Configured settings for opts: &{trace:false atlasAddr:cloudaicompanion.googleapis.com:443 cloudCodeAddr:cloudcode-pa.googleapis.com:443 cloudCodeQuotaProject: autoGen:false invokeGen:true codeCacheMaxEntries:1024 completionOpts:{debounce:300000000 throttle:100000000 minScoreThreshold:-6 languageThresholds:map[] enableThresholds:true commentCompletion:false citationLengthThreshold:-1 enableRecitations:true citationLogFilePath: repeatedStringFilterThreshold:60 otherFilesGenerationLimit:20 otherFilesGenerationSizeLimit:-1 otherFilesCompletionLimit:0 multiQueryTailNSForCompletion:[] multiQueryTailNSForGeneration:[]} contextExclusionFile:.aiexclude chatOpts:{contextOrdering:fsu maxFileBytes:75000 maxHistoryBytes:500000 escapeContext:false otherFilesLimit:20 otherFilesSizeLimit:-1 userSelectedFilesSizeLimit:-1} useRest:<nil> useCloudCodeAPI:true enableNotebooks:false enableRAGL:false enableRAGLCompletion:false enableRAGLChat:false ragLRerankByLangBoost:0 raglCoLocated:20 raglTotalFiles:250 raglFileLimit:524288 raglIncludeDocFiles:false raglIncludeUnitTestFile:false raglMaxFileSearchDepth:1 substringsToIdentifyTestPrompts:[test] substringsToIdentifyDocPrompts:[document comment] raglTopKTestFilesToInclude:0 raglTopKDocFilesToInclude:0}
+I0324 21:09:59.392812    2082 configuration.go:284] Configured settings for canCancelRequests: true
+I0324 21:09:59.392852    2082 configuration.go:286] Configured settings for contextPromptOpts: &{Endpoint:}
+I0324 21:09:59.534743    2082 experiments.go:162] Applied experiment flag "DuetAiLocalRag__enable_local_rag_completion" to enableRAGLCompletion with value true
+I0324 21:09:59.534817    2082 experiments.go:119] Applied experiment flag "Chat__enable_chat_streaming" to chat.enableChatStreaming with value true
+I0324 21:09:59.534840    2082 experiments.go:198] Applied experiment flag "DuetAiLocalRag__include_doc_files" to includeDocFiles with value false
+I0324 21:09:59.534924    2082 experiments.go:123] Applied experiment flag "DuetAiCloudCodeAPI__enable_cloudcode_api" to useCloudCodeAPI with value true
+I0324 21:09:59.534997    2082 experiments.go:154] Applied experiment flag "DuetAiLocalRag__enable_local_rag" to enableRAGL with value true
+I0324 21:09:59.535019    2082 experiments.go:202] Applied experiment flag "DuetAiLocalRag__include_unit_test_files" to includeUnitTestFile with value false
+I0324 21:09:59.535058    2082 experiments.go:143] Applied experiment flag "Chat__display_prompt_recitations" to cloudCodeOpts.EnablePromptEnhancementForChat with value true
+I0324 21:09:59.535074    2082 experiments.go:158] Applied experiment flag "DuetAiLocalRag__enable_local_rag_chat" to enableRAGLChat with value true
+I0324 21:09:59.535091    2082 experiments.go:139] Applied experiment flag "DuetAICodeTransform__display_prompt_recitations" to cloudCodeOpts.EnablePromptEnhancementForTransform with value true
+I0324 21:09:59.535111    2082 experiments.go:147] Applied experiment flag "GcaCitationBlock__enable_citation_block" to cloudCodeOpts.EnableAdminCitationBlock with value false
+I0324 21:09:59.535131    2082 experiments.go:115] Applied experiment flag "Chat__fca_chat_context_window_size" to chat.fcaContextWindowSize with value 450000
+I0324 21:09:59.535154    2082 experiments.go:107] Applied experiment flag "DuetAiGeneration__codeGeneration_context_window_size" to otherFilesGenerationSizeLimit with value 64000
+I0324 21:09:59.535178    2082 experiments.go:218] Applied experiment flag "DuetAiLocalRag__top_k_doc_files_to_include" to topKDocFilesToInclude with value 2
+I0324 21:09:59.535193    2082 experiments.go:131] Applied experiment flag "DuetAiMendelOverrides__inlineSuggestions_debounceMs" to completionOpts.debounce with value 300
+I0324 21:09:59.535209    2082 experiments.go:111] Applied experiment flag "Chat__chat_context_window_size" to chat.contextWindowSize with value -1
+I0324 21:09:59.535231    2082 experiments.go:206] Applied experiment flag "DuetAiLocalRag__max_file_search_depth" to maxFileSearchDepth with value 2
+I0324 21:09:59.535302    2082 experiments.go:186] Applied experiment flag "DuetAiLocalRag__otherfiles_chat_limit" to otherFilesChatLimit with value 20
+I0324 21:09:59.535378    2082 experiments.go:182] Applied experiment flag "DuetAiLocalRag__otherfiles_completion_limit" to otherFilesCompletionLimit with value 15
+I0324 21:09:59.535393    2082 experiments.go:166] Applied experiment flag "DuetAiLocalRag__otherfiles_generation_limit" to otherFilesGenerationLimit with value 40
+I0324 21:09:59.535435    2082 experiments.go:222] Applied experiment flag "DuetAiLocalRag__top_k_test_files_to_include" to topKTestFilesToInclude with value 2
+I0324 21:09:59.535451    2082 experiments.go:127] Applied experiment flag "DuetAiMendelOverrides__codeCompletion_defaultThreshold" to completionOpts.minScoreTheshold with value -100
+I0324 21:09:59.535478    2082 experiments.go:170] Applied experiment flag "DuetAiLocalRag__cache_co_located" to coLocated with value 20
+I0324 21:09:59.535491    2082 experiments.go:174] Applied experiment flag "DuetAiLocalRag__cache_file_limit" to fileLimit with value 4.1943e+06
+I0324 21:09:59.535506    2082 experiments.go:178] Applied experiment flag "DuetAiLocalRag__cache_total_files" to totalFiles with value 250
+I0324 21:09:59.535530    2082 experiments.go:226] Applied experiment flag "DuetAiLocalRag__local_rag_reranking_by_language" to localRAGRerankingByLanguageParam with value 0
+I0324 21:09:59.535554    2082 experiments.go:190] Extracted experiment flag "DuetAiRemoteRag__multi_query_tail_ns_for_completion" to multiQueryTailNS with value []
+I0324 21:09:59.535574    2082 experiments.go:194] Extracted experiment flag "DuetAiRemoteRag__multi_query_tail_ns_for_generation" to multiQueryTailNS with value []
+I0324 21:09:59.535594    2082 experiments.go:210] Applied experiment flag "DuetAiLocalRag__substrings_to_identify_doc_prompts" to substringsToIdentifyDocPrompts with value [document comment]
+I0324 21:09:59.535622    2082 experiments.go:214] Applied experiment flag "DuetAiLocalRag__substrings_to_identify_test_prompts" to substringsToIdentifyTestPrompts with value [test]
+I0324 21:09:59.535746    2082 configuration.go:468] Repopulating context cache from document cache
+I0324 21:09:59.536059    2082 cloudcode.go:45] Using Cloud Code API
+I0324 21:09:59.547974    2082 client.go:419] CompleteCode request: {"enablePromptEnhancement":true,"ideContext":{"currentFile":{"segments":[{"content":"Code Assist healthcheck id: ad68a871-9036-4d48-931e-d458fa747615\nPi = "},{"isSelected":true},{}]}},"metadata":{"ideType":"CLOUD_SHELL","ideVersion":"1.94.2-cde","platform":"LINUX_AMD64","pluginType":"CLOUD_CODE","pluginVersion":"2.27.0"},"project":"cloudshell-gca","requestId":"cloudcode-728935864-50ca693d-8447-47de-ad51-5dc6664fe88d"}
+I0324 21:09:59.938416    2082 experiments.go:123] Applied experiment flag "DuetAiCloudCodeAPI__enable_cloudcode_api" to useCloudCodeAPI with value true
+I0324 21:09:59.938460    2082 experiments.go:202] Applied experiment flag "DuetAiLocalRag__include_unit_test_files" to includeUnitTestFile with value false
+I0324 21:09:59.938477    2082 experiments.go:158] Applied experiment flag "DuetAiLocalRag__enable_local_rag_chat" to enableRAGLChat with value true
+I0324 21:09:59.938493    2082 experiments.go:143] Applied experiment flag "Chat__display_prompt_recitations" to cloudCodeOpts.EnablePromptEnhancementForChat with value true
+I0324 21:09:59.938507    2082 experiments.go:154] Applied experiment flag "DuetAiLocalRag__enable_local_rag" to enableRAGL with value true
+I0324 21:09:59.938522    2082 experiments.go:162] Applied experiment flag "DuetAiLocalRag__enable_local_rag_completion" to enableRAGLCompletion with value true
+I0324 21:09:59.938544    2082 experiments.go:139] Applied experiment flag "DuetAICodeTransform__display_prompt_recitations" to cloudCodeOpts.EnablePromptEnhancementForTransform with value true
+I0324 21:09:59.938568    2082 experiments.go:198] Applied experiment flag "DuetAiLocalRag__include_doc_files" to includeDocFiles with value false
+I0324 21:09:59.938583    2082 experiments.go:119] Applied experiment flag "Chat__enable_chat_streaming" to chat.enableChatStreaming with value true
+I0324 21:09:59.938601    2082 experiments.go:147] Applied experiment flag "GcaCitationBlock__enable_citation_block" to cloudCodeOpts.EnableAdminCitationBlock with value false
+I0324 21:09:59.938622    2082 experiments.go:166] Applied experiment flag "DuetAiLocalRag__otherfiles_generation_limit" to otherFilesGenerationLimit with value 40
+I0324 21:09:59.938644    2082 experiments.go:218] Applied experiment flag "DuetAiLocalRag__top_k_doc_files_to_include" to topKDocFilesToInclude with value 2
+I0324 21:09:59.938657    2082 experiments.go:111] Applied experiment flag "Chat__chat_context_window_size" to chat.contextWindowSize with value -1
+I0324 21:09:59.938682    2082 experiments.go:115] Applied experiment flag "Chat__fca_chat_context_window_size" to chat.fcaContextWindowSize with value 450000
+I0324 21:09:59.938692    2082 experiments.go:107] Applied experiment flag "DuetAiGeneration__codeGeneration_context_window_size" to otherFilesGenerationSizeLimit with value 64000
+I0324 21:09:59.938759    2082 experiments.go:186] Applied experiment flag "DuetAiLocalRag__otherfiles_chat_limit" to otherFilesChatLimit with value 20
+I0324 21:09:59.938780    2082 experiments.go:206] Applied experiment flag "DuetAiLocalRag__max_file_search_depth" to maxFileSearchDepth with value 2
+I0324 21:09:59.938796    2082 experiments.go:182] Applied experiment flag "DuetAiLocalRag__otherfiles_completion_limit" to otherFilesCompletionLimit with value 15
+I0324 21:09:59.938816    2082 experiments.go:222] Applied experiment flag "DuetAiLocalRag__top_k_test_files_to_include" to topKTestFilesToInclude with value 2
+I0324 21:09:59.938829    2082 experiments.go:131] Applied experiment flag "DuetAiMendelOverrides__inlineSuggestions_debounceMs" to completionOpts.debounce with value 300
+I0324 21:09:59.938847    2082 experiments.go:170] Applied experiment flag "DuetAiLocalRag__cache_co_located" to coLocated with value 20
+I0324 21:09:59.938860    2082 experiments.go:174] Applied experiment flag "DuetAiLocalRag__cache_file_limit" to fileLimit with value 4.1943e+06
+I0324 21:09:59.938872    2082 experiments.go:178] Applied experiment flag "DuetAiLocalRag__cache_total_files" to totalFiles with value 250
+I0324 21:09:59.938893    2082 experiments.go:226] Applied experiment flag "DuetAiLocalRag__local_rag_reranking_by_language" to localRAGRerankingByLanguageParam with value 0
+I0324 21:09:59.938905    2082 experiments.go:127] Applied experiment flag "DuetAiMendelOverrides__codeCompletion_defaultThreshold" to completionOpts.minScoreTheshold with value -100
+I0324 21:09:59.938920    2082 experiments.go:190] Extracted experiment flag "DuetAiRemoteRag__multi_query_tail_ns_for_completion" to multiQueryTailNS with value []
+I0324 21:09:59.938939    2082 experiments.go:194] Extracted experiment flag "DuetAiRemoteRag__multi_query_tail_ns_for_generation" to multiQueryTailNS with value []
+I0324 21:09:59.938957    2082 experiments.go:214] Applied experiment flag "DuetAiLocalRag__substrings_to_identify_test_prompts" to substringsToIdentifyTestPrompts with value [test]
+I0324 21:09:59.938978    2082 experiments.go:210] Applied experiment flag "DuetAiLocalRag__substrings_to_identify_doc_prompts" to substringsToIdentifyDocPrompts with value [document comment]
+I0324 21:10:00.142101    2082 client.go:419] CompleteCode request: {"enablePromptEnhancement":true,"ideContext":{"currentFile":{"segments":[{"content":"Code Assist healthcheck id: 51337a12-6e39-44d7-924d-862b32f169aa\nPi = "},{"isSelected":true},{}]}},"metadata":{"ideType":"CLOUD_SHELL","ideVersion":"1.94.2-cde","platform":"LINUX_AMD64","pluginType":"CLOUD_CODE","pluginVersion":"2.27.0"},"project":"cloudshell-gca","requestId":"cloudcode-728935864-f9ae4444-e4a4-4c7a-a393-8c8a3c2c6a15"}
+I0324 21:10:00.664864    2082 client.go:419] CompleteCode request: {"enablePromptEnhancement":true,"ideContext":{"currentFile":{"segments":[{"content":"Code Assist healthcheck id: 9bab5a5e-7752-4c81-8031-759a274f9a97\nPi = "},{"isSelected":true},{}]}},"metadata":{"ideType":"CLOUD_SHELL","ideVersion":"1.94.2-cde","platform":"LINUX_AMD64","pluginType":"CLOUD_CODE","pluginVersion":"2.27.0"},"project":"cloudshell-gca","requestId":"cloudcode-728935864-3a0c5efe-c90b-4228-919d-13fff8bcd128"}
+I0324 21:10:22.118781    2082 conversation.go:799] Starting getChatIDEContext with detected intent: 
+I0324 21:10:22.118822    2082 document.go:421] NoneEditType, returning ReasonRecentlyOpened
+I0324 21:10:22.118899    2082 ide_context.go:131] Unable to read file at /home/marty_jehng/.aiexclude
+/home/marty_jehng
+file:///home/marty_jehng
+I0324 21:10:22.118917    2082 conversation.go:836] Unable to retrieve excluded files for request #7: open /home/marty_jehng/.aiexclude: no such file or directory
+I0324 21:10:22.119021    2082 rag_cache.go:821] Retrieving and scoring colocated and open files
+I0324 21:10:22.119032    2082 rag_cache.go:851] rerankByLangBoost=0
+I0324 21:10:31.305084    2082 handler.go:159] cancel was requested for: 12, needs to be canceled: false
+I0324 21:10:31.305102    2082 handler.go:163] cancel requested for 12 but not found
+I0324 21:10:32.606483    2082 handler.go:159] cancel was requested for: 13, needs to be canceled: false
+I0324 21:10:32.606501    2082 handler.go:163] cancel requested for 13 but not found
+I0324 21:10:32.701958    2082 conversation.go:799] Starting getChatIDEContext with detected intent: 
+I0324 21:10:32.701999    2082 document.go:421] NoneEditType, returning ReasonRecentlyOpened
+I0324 21:10:32.702039    2082 ide_context.go:131] Unable to read file at /home/marty_jehng/.aiexclude
+/home/marty_jehng
+file:///home/marty_jehng
+I0324 21:10:32.702054    2082 conversation.go:836] Unable to retrieve excluded files for request #16: open /home/marty_jehng/.aiexclude: no such file or directory
+I0324 21:10:32.702087    2082 rag_cache.go:821] Retrieving and scoring colocated and open files
+I0324 21:10:32.702096    2082 rag_cache.go:851] rerankByLangBoost=0
+I0324 21:10:33.697597    2082 conversation.go:799] Starting getChatIDEContext with detected intent: 
+I0324 21:10:33.697639    2082 document.go:421] NoneEditType, returning ReasonRecentlyOpened
+I0324 21:10:33.697692    2082 ide_context.go:131] Unable to read file at /home/marty_jehng/.aiexclude
+/home/marty_jehng
+file:///home/marty_jehng
+I0324 21:10:33.697707    2082 conversation.go:836] Unable to retrieve excluded files for request #18: open /home/marty_jehng/.aiexclude: no such file or directory
+I0324 21:10:33.697750    2082 rag_cache.go:821] Retrieving and scoring colocated and open files
+I0324 21:10:33.697760    2082 rag_cache.go:851] rerankByLangBoost=0
+Completion Provider - completion # 0 - New completion requested from language client at position {"line":35,"character":2}, triggerKind=1
+I0324 21:10:35.906177    2082 document.go:425] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0324 21:10:35.959410    2082 conversation.go:799] Starting getChatIDEContext with detected intent: 
+I0324 21:10:35.959461    2082 document.go:425] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0324 21:10:35.959524    2082 ide_context.go:131] Unable to read file at /home/marty_jehng/.aiexclude
+/home/marty_jehng
+file:///home/marty_jehng
+I0324 21:10:35.959540    2082 conversation.go:836] Unable to retrieve excluded files for request #23: open /home/marty_jehng/.aiexclude: no such file or directory
+I0324 21:10:35.959574    2082 rag_cache.go:821] Retrieving and scoring colocated and open files
+I0324 21:10:35.959583    2082 rag_cache.go:851] rerankByLangBoost=0
+I0324 21:10:36.206852    2082 completion.go:233] Inline suggestion requested (request #22): {TextDocumentPositionParams:{TextDocument:{URI:file:///home/marty_jehng/templates/index.html} Position:{Line:35 Character:2}} TriggerMode:0 IDESessionIndex:20250324_1 CompletionIndex:0}
+I0324 21:10:36.207457    2082 rag_cache.go:821] Retrieving and scoring colocated and open files
+I0324 21:10:36.207479    2082 rag_cache.go:851] rerankByLangBoost=0
+I0324 21:10:36.207734    2082 client.go:419] CompleteCode request: {"enablePromptEnhancement":true,"ideContext":{"currentFile":{"codeLanguage":"html","filePath":"/home/marty_jehng/templates/index.html","includedReason":"CURRENTLY_OPEN","lastEdit":["ADD"],"segments":[{"content":"\u003chtml\u003e\n\u003chead\u003e\n    \u003ctitle\u003eAudio Recorder\u003c/title\u003e\n\u003c/head\u003e\n\u003cbody\u003e\n\n    \u003ctable style=\"width:100%\"\u003e\n        \u003ctr\u003e\n            \u003ctd style=\"width:50%\"\u003e\n                \u003ch2\u003eRecord and Upload Audio\u003c/h2\u003e\n\n                \u003cbutton id=\"record\"\u003eRecord\u003c/button\u003e\n                \u003cbutton id=\"stop\"\u003eStop\u003c/button\u003e\n                \u003cspan id=\"timer\"\u003e00:00\u003c/span\u003e\n                \u003caudio id=\"audio\"\u003e\u003c/audio\u003e\n                \u003cform id=\"uploadForm\" method=\"POST\" enctype=\"multipart/form-data\"\u003e\n                    \u003cinput type=\"hidden\" name=\"audio_data\" id=\"audioData\"\u003e\n                \u003c/form\u003e\n                \u003cscript src=\"script.js\"\u003e\u003c/script\u003e\n                \u003chl\u003e\u003c/hl\u003e\n                \u003ch2\u003eRecorded Files\u003c/h2\u003e\n                \u003cul\u003e\n                    {% for file in files %}\n                    \u003cli\u003e \n                        \u003caudio controls\u003e\n                            \u003csource src=\"{{ url_for('uploaded_file', filename=file) }}\"\u003e\n                            Your browser does not support the audio element.\n                        \u003c/audio\u003e\u003cbr\u003e\n                        {{file}}\n                        \u003ca href=\"uploads/{{file}}.txt\"\u003e{{file}}.txt\u003c/a\u003e\n                        \u003c!-- \u003ca href=\"/{{file}}.txt\"\u003e{{file}}.txt\u003c/a\u003e --\u003e\n                    \u003c/li\u003e\n                    {% endfor %}\n                \u003c/ul\u003e\n            \u003c/td\u003e\n \u003c"},{"isSelected":true},{"content":"           \u003ctd style=\"width:50%\"\u003e\n                \u003ch2\u003eType in your text to generate audio\u003c/h2\u003e\n\n                \u003cform action=\"/upload_text\" method=\"post\"\u003e\n                  \u003ctextarea name=\"text\" rows=\"10\" cols=\"50\"\u003e\u003c/textarea\u003e\n                  \u003cbr\u003e\n                  \u003cinput type=\"submit\" value=\"Upload\"\u003e\n                \u003c/form\u003e\n                \u003c!-- insert list of files here --\u003e\n            \u003c/td\u003e\n        \u003c/tr\u003e\n    \u003c/table\u003e\n\u003c/body\u003e\n\u003c/html\u003e"}]}},"metadata":{"ideType":"CLOUD_SHELL","ideVersion":"1.94.2-cde","platform":"LINUX_AMD64","pluginType":"CLOUD_CODE","pluginVersion":"2.27.0"},"project":"cloudshell-gca","requestId":"cloudcode-728935864-055e3807-8ef9-420c-afd4-508c2380de41"}
+I0324 21:10:36.223437    2082 handler.go:159] cancel was requested for: 22, needs to be canceled: true
+Completion Provider - completion # 1 - New completion requested from language client at position {"line":35,"character":3}, triggerKind=1
+I0324 21:10:36.250423    2082 document.go:425] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0324 21:10:36.311173    2082 conversation.go:799] Starting getChatIDEContext with detected intent: 
+I0324 21:10:36.311215    2082 document.go:425] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0324 21:10:36.311257    2082 ide_context.go:131] Unable to read file at /home/marty_jehng/.aiexclude
+/home/marty_jehng
+file:///home/marty_jehng
+I0324 21:10:36.311273    2082 conversation.go:836] Unable to retrieve excluded files for request #27: open /home/marty_jehng/.aiexclude: no such file or directory
+I0324 21:10:36.311310    2082 rag_cache.go:821] Retrieving and scoring colocated and open files
+I0324 21:10:36.311319    2082 rag_cache.go:851] rerankByLangBoost=0
+I0324 21:10:36.551036    2082 completion.go:233] Inline suggestion requested (request #26): {TextDocumentPositionParams:{TextDocument:{URI:file:///home/marty_jehng/templates/index.html} Position:{Line:35 Character:3}} TriggerMode:0 IDESessionIndex:20250324_1 CompletionIndex:1}
+I0324 21:10:36.551640    2082 rag_cache.go:821] Retrieving and scoring colocated and open files
+I0324 21:10:36.551662    2082 rag_cache.go:851] rerankByLangBoost=0
+I0324 21:10:36.551923    2082 client.go:419] CompleteCode request: {"enablePromptEnhancement":true,"ideContext":{"currentFile":{"codeLanguage":"html","filePath":"/home/marty_jehng/templates/index.html","includedReason":"CURRENTLY_OPEN","lastEdit":["ADD","ADD"],"segments":[{"content":"\u003chtml\u003e\n\u003chead\u003e\n    \u003ctitle\u003eAudio Recorder\u003c/title\u003e\n\u003c/head\u003e\n\u003cbody\u003e\n\n    \u003ctable style=\"width:100%\"\u003e\n        \u003ctr\u003e\n            \u003ctd style=\"width:50%\"\u003e\n                \u003ch2\u003eRecord and Upload Audio\u003c/h2\u003e\n\n                \u003cbutton id=\"record\"\u003eRecord\u003c/button\u003e\n                \u003cbutton id=\"stop\"\u003eStop\u003c/button\u003e\n                \u003cspan id=\"timer\"\u003e00:00\u003c/span\u003e\n                \u003caudio id=\"audio\"\u003e\u003c/audio\u003e\n                \u003cform id=\"uploadForm\" method=\"POST\" enctype=\"multipart/form-data\"\u003e\n                    \u003cinput type=\"hidden\" name=\"audio_data\" id=\"audioData\"\u003e\n                \u003c/form\u003e\n                \u003cscript src=\"script.js\"\u003e\u003c/script\u003e\n                \u003chl\u003e\u003c/hl\u003e\n                \u003ch2\u003eRecorded Files\u003c/h2\u003e\n                \u003cul\u003e\n                    {% for file in files %}\n                    \u003cli\u003e \n                        \u003caudio controls\u003e\n                            \u003csource src=\"{{ url_for('uploaded_file', filename=file) }}\"\u003e\n                            Your browser does not support the audio element.\n                        \u003c/audio\u003e\u003cbr\u003e\n                        {{file}}\n                        \u003ca href=\"uploads/{{file}}.txt\"\u003e{{file}}.txt\u003c/a\u003e\n                        \u003c!-- \u003ca href=\"/{{file}}.txt\"\u003e{{file}}.txt\u003c/a\u003e --\u003e\n                    \u003c/li\u003e\n                    {% endfor %}\n                \u003c/ul\u003e\n            \u003c/td\u003e\n \u003c!"},{"isSelected":true},{"content":"           \u003ctd style=\"width:50%\"\u003e\n                \u003ch2\u003eType in your text to generate audio\u003c/h2\u003e\n\n                \u003cform action=\"/upload_text\" method=\"post\"\u003e\n                  \u003ctextarea name=\"text\" rows=\"10\" cols=\"50\"\u003e\u003c/textarea\u003e\n                  \u003cbr\u003e\n                  \u003cinput type=\"submit\" value=\"Upload\"\u003e\n                \u003c/form\u003e\n                \u003c!-- insert list of files here --\u003e\n            \u003c/td\u003e\n        \u003c/tr\u003e\n    \u003c/table\u003e\n\u003c/body\u003e\n\u003c/html\u003e"}]}},"metadata":{"ideType":"CLOUD_SHELL","ideVersion":"1.94.2-cde","platform":"LINUX_AMD64","pluginType":"CLOUD_CODE","pluginVersion":"2.27.0"},"project":"cloudshell-gca","requestId":"cloudcode-728935864-69d0fb0e-af36-4ba7-a587-5d939ebfc4c1"}
+I0324 21:10:36.830290    2082 completion.go:517] Code complete response for request #26 after post-processing: &{Suggestions:[] TraceID:7e7a79346ed19d8e RequestID:cloudcode-728935864-69d0fb0e-af36-4ba7-a587-5d939ebfc4c1 ServerTiming:gfet5t7;dur=244, gfet4t7; dur=276 NetPlusServerTiming:278.301459ms FromCache:false Typeover:false TriggerMode:0 ProcessingDetails:{RagStatus:RAG_NOT_FOUND AtlasExperience:9e31955f0372ed1f PromptID: CompletionMethod:0 ExperimentDebugStringFingerprint: ModelURI:}}
+Received completion response from language server with 0 valid responses and 0 responses that have been filtered out
+Completion Provider - completion # 1 - Completion result obtained from language client
+Completion Provider - completion # 2 - New completion requested from language client at position {"line":35,"character":4}, triggerKind=1
+I0324 21:10:38.332943    2082 document.go:425] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0324 21:10:38.394800    2082 handler.go:159] cancel was requested for: 32, needs to be canceled: true
+I0324 21:10:38.400906    2082 conversation.go:799] Starting getChatIDEContext with detected intent: 
+I0324 21:10:38.400965    2082 document.go:425] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0324 21:10:38.401006    2082 ide_context.go:131] Unable to read file at /home/marty_jehng/.aiexclude
+/home/marty_jehng
+file:///home/marty_jehng
+I0324 21:10:38.401021    2082 conversation.go:836] Unable to retrieve excluded files for request #33: open /home/marty_jehng/.aiexclude: no such file or directory
+I0324 21:10:38.401057    2082 rag_cache.go:821] Retrieving and scoring colocated and open files
+I0324 21:10:38.401068    2082 rag_cache.go:851] rerankByLangBoost=0
+Completion Provider - completion # 3 - New completion requested from language client at position {"line":35,"character":4}, triggerKind=1
+I0324 21:10:38.410563    2082 document.go:425] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0324 21:10:38.452834    2082 handler.go:159] cancel was requested for: 35, needs to be canceled: true
+Completion Provider - completion # 4 - New completion requested from language client at position {"line":35,"character":5}, triggerKind=1
+I0324 21:10:38.500566    2082 document.go:425] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0324 21:10:38.551850    2082 conversation.go:799] Starting getChatIDEContext with detected intent: 
+I0324 21:10:38.551889    2082 document.go:425] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0324 21:10:38.551931    2082 ide_context.go:131] Unable to read file at /home/marty_jehng/.aiexclude
+/home/marty_jehng
+file:///home/marty_jehng
+I0324 21:10:38.551946    2082 conversation.go:836] Unable to retrieve excluded files for request #38: open /home/marty_jehng/.aiexclude: no such file or directory
+I0324 21:10:38.551987    2082 rag_cache.go:821] Retrieving and scoring colocated and open files
+I0324 21:10:38.551996    2082 rag_cache.go:851] rerankByLangBoost=0
+I0324 21:10:38.801024    2082 completion.go:233] Inline suggestion requested (request #37): {TextDocumentPositionParams:{TextDocument:{URI:file:///home/marty_jehng/templates/index.html} Position:{Line:35 Character:5}} TriggerMode:0 IDESessionIndex:20250324_1 CompletionIndex:4}
+Completion Provider - completion # 4 - Completion result obtained from language client
+I0324 21:10:41.019158    2082 conversation.go:799] Starting getChatIDEContext with detected intent: 
+I0324 21:10:41.019217    2082 document.go:425] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0324 21:10:41.019260    2082 ide_context.go:131] Unable to read file at /home/marty_jehng/.aiexclude
+/home/marty_jehng
+file:///home/marty_jehng
+I0324 21:10:41.019277    2082 conversation.go:836] Unable to retrieve excluded files for request #49: open /home/marty_jehng/.aiexclude: no such file or directory
+I0324 21:10:41.019311    2082 rag_cache.go:821] Retrieving and scoring colocated and open files
+I0324 21:10:41.019320    2082 rag_cache.go:851] rerankByLangBoost=0
+I0324 21:10:41.489502    2082 conversation.go:799] Starting getChatIDEContext with detected intent: 
+I0324 21:10:41.489543    2082 document.go:425] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0324 21:10:41.489610    2082 ide_context.go:131] Unable to read file at /home/marty_jehng/.aiexclude
+/home/marty_jehng
+file:///home/marty_jehng
+I0324 21:10:41.489627    2082 conversation.go:836] Unable to retrieve excluded files for request #52: open /home/marty_jehng/.aiexclude: no such file or directory
+I0324 21:10:41.489659    2082 rag_cache.go:821] Retrieving and scoring colocated and open files
+I0324 21:10:41.489669    2082 rag_cache.go:851] rerankByLangBoost=0
+I0324 21:10:41.923792    2082 conversation.go:799] Starting getChatIDEContext with detected intent: 
+I0324 21:10:41.923833    2082 document.go:425] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0324 21:10:41.923874    2082 ide_context.go:131] Unable to read file at /home/marty_jehng/.aiexclude
+/home/marty_jehng
+file:///home/marty_jehng
+I0324 21:10:41.923889    2082 conversation.go:836] Unable to retrieve excluded files for request #56: open /home/marty_jehng/.aiexclude: no such file or directory
+I0324 21:10:41.923921    2082 rag_cache.go:821] Retrieving and scoring colocated and open files
+I0324 21:10:41.923940    2082 rag_cache.go:851] rerankByLangBoost=0
+I0324 21:10:42.143240    2082 conversation.go:799] Starting getChatIDEContext with detected intent: 
+I0324 21:10:42.143291    2082 document.go:425] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0324 21:10:42.143366    2082 ide_context.go:131] Unable to read file at /home/marty_jehng/.aiexclude
+/home/marty_jehng
+file:///home/marty_jehng
+I0324 21:10:42.143409    2082 conversation.go:836] Unable to retrieve excluded files for request #60: open /home/marty_jehng/.aiexclude: no such file or directory
+I0324 21:10:42.143450    2082 rag_cache.go:821] Retrieving and scoring colocated and open files
+I0324 21:10:42.143460    2082 rag_cache.go:851] rerankByLangBoost=0
+I0324 21:10:45.883123    2082 conversation.go:799] Starting getChatIDEContext with detected intent: 
+I0324 21:10:45.883177    2082 document.go:425] OtherEditType (DELETE), returning ReasonRecentlyEdited
+I0324 21:10:45.883234    2082 ide_context.go:131] Unable to read file at /home/marty_jehng/.aiexclude
+/home/marty_jehng
+file:///home/marty_jehng
+I0324 21:10:45.883249    2082 conversation.go:836] Unable to retrieve excluded files for request #63: open /home/marty_jehng/.aiexclude: no such file or directory
+I0324 21:10:45.883280    2082 rag_cache.go:821] Retrieving and scoring colocated and open files
+I0324 21:10:45.883289    2082 rag_cache.go:851] rerankByLangBoost=0
+I0324 21:10:49.295654    2082 conversation.go:799] Starting getChatIDEContext with detected intent: 
+I0324 21:10:49.295732    2082 document.go:425] OtherEditType (DELETE), returning ReasonRecentlyEdited
+I0324 21:10:49.295766    2082 ide_context.go:131] Unable to read file at /home/marty_jehng/.aiexclude
+/home/marty_jehng
+file:///home/marty_jehng
+I0324 21:10:49.295781    2082 conversation.go:836] Unable to retrieve excluded files for request #67: open /home/marty_jehng/.aiexclude: no such file or directory
+I0324 21:10:49.295818    2082 rag_cache.go:821] Retrieving and scoring colocated and open files
+I0324 21:10:49.295828    2082 rag_cache.go:851] rerankByLangBoost=0
+Completion Provider - completion # 5 - New completion requested from language client at position {"line":44,"character":16}, triggerKind=1
+I0324 21:10:50.529004    2082 document.go:425] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0324 21:10:50.591035    2082 conversation.go:799] Starting getChatIDEContext with detected intent: 
+I0324 21:10:50.591077    2082 document.go:425] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0324 21:10:50.591120    2082 ide_context.go:131] Unable to read file at /home/marty_jehng/.aiexclude
+/home/marty_jehng
+file:///home/marty_jehng
+I0324 21:10:50.591136    2082 conversation.go:836] Unable to retrieve excluded files for request #72: open /home/marty_jehng/.aiexclude: no such file or directory
+I0324 21:10:50.591169    2082 rag_cache.go:821] Retrieving and scoring colocated and open files
+I0324 21:10:50.591179    2082 rag_cache.go:851] rerankByLangBoost=0
+I0324 21:10:50.831423    2082 completion.go:233] Inline suggestion requested (request #70): {TextDocumentPositionParams:{TextDocument:{URI:file:///home/marty_jehng/templates/index.html} Position:{Line:44 Character:16}} TriggerMode:0 IDESessionIndex:20250324_1 CompletionIndex:5}
+I0324 21:10:50.831923    2082 rag_cache.go:821] Retrieving and scoring colocated and open files
+I0324 21:10:50.831937    2082 rag_cache.go:851] rerankByLangBoost=0
+I0324 21:10:50.832206    2082 client.go:419] CompleteCode request: {"enablePromptEnhancement":true,"ideContext":{"currentFile":{"codeLanguage":"html","filePath":"/home/marty_jehng/templates/index.html","includedReason":"CURRENTLY_OPEN","lastEdit":["ADD","UNKNOWN_EDIT","UNKNOWN_EDIT","DELETE","UNKNOWN_EDIT"],"segments":[{"content":"\u003chtml\u003e\n\u003chead\u003e\n    \u003ctitle\u003eAudio Recorder\u003c/title\u003e\n\u003c/head\u003e\n\u003cbody\u003e\n\n    \u003ctable style=\"width:100%\"\u003e\n        \u003ctr\u003e\n            \u003ctd style=\"width:50%\"\u003e\n                \u003ch2\u003eRecord and Upload Audio\u003c/h2\u003e\n\n                \u003cbutton id=\"record\"\u003eRecord\u003c/button\u003e\n                \u003cbutton id=\"stop\"\u003eStop\u003c/button\u003e\n                \u003cspan id=\"timer\"\u003e00:00\u003c/span\u003e\n                \u003caudio id=\"audio\"\u003e\u003c/audio\u003e\n                \u003cform id=\"uploadForm\" method=\"POST\" enctype=\"multipart/form-data\"\u003e\n                    \u003cinput type=\"hidden\" name=\"audio_data\" id=\"audioData\"\u003e\n                \u003c/form\u003e\n                \u003cscript src=\"script.js\"\u003e\u003c/script\u003e\n                \u003chl\u003e\u003c/hl\u003e\n                \u003ch2\u003eRecorded Files\u003c/h2\u003e\n                \u003cul\u003e\n                    {% for file in files %}\n                    \u003cli\u003e \n                        \u003caudio controls\u003e\n                            \u003csource src=\"{{ url_for('uploaded_file', filename=file) }}\"\u003e\n                            Your browser does not support the audio element.\n                        \u003c/audio\u003e\u003cbr\u003e\n                        {{file}}\n                        \u003ca href=\"uploads/{{file}}.txt\"\u003e{{file}}.txt\u003c/a\u003e\n                        \u003c!-- \u003ca href=\"/{{file}}.txt\"\u003e{{file}}.txt\u003c/a\u003e --\u003e\n                    \u003c/li\u003e\n                    {% endfor %}\n                \u003c/ul\u003e\n            \u003c/td\u003e\n \u003c!--           \u003ctd style=\"width:50%\"\u003e\n                \u003ch2\u003eType in your text to generate audio\u003c/h2\u003e\n\n                \u003cform action=\"/upload_text\" method=\"post\"\u003e\n                  \u003ctextarea name=\"text\" rows=\"10\" cols=\"50\"\u003e\u003c/textarea\u003e\n                  \u003cbr\u003e\n                  \u003cinput type=\"submit\" value=\"Upload\"\u003e\n                \u003c/form\u003e\n                \u003c!-- insert list of files here --\u003e\n                "},{"isSelected":true},{"content":"--\u003e\n            \u003c/td\u003e\n        \u003c/tr\u003e\n    \u003c/table\u003e\n\u003c/body\u003e\n\u003c/html\u003e"}]}},"metadata":{"ideType":"CLOUD_SHELL","ideVersion":"1.94.2-cde","platform":"LINUX_AMD64","pluginType":"CLOUD_CODE","pluginVersion":"2.27.0"},"project":"cloudshell-gca","requestId":"cloudcode-728935864-e7a1cb86-ea57-4eec-926f-d9c021090e8f"}
+I0324 21:10:51.211722    2082 completion.go:517] Code complete response for request #70 after post-processing: &{Suggestions:[] TraceID:29e026a06d043c50 RequestID:cloudcode-728935864-e7a1cb86-ea57-4eec-926f-d9c021090e8f ServerTiming:gfet5t7;dur=332, gfet4t7; dur=375 NetPlusServerTiming:379.462248ms FromCache:false Typeover:false TriggerMode:0 ProcessingDetails:{RagStatus:RAG_NOT_FOUND AtlasExperience:9e31955f0372ed1f PromptID: CompletionMethod:0 ExperimentDebugStringFingerprint: ModelURI:}}
+Received completion response from language server with 0 valid responses and 0 responses that have been filtered out
+Completion Provider - completion # 5 - Completion result obtained from language client
+I0324 21:10:55.570521    2082 handler.go:159] cancel was requested for: 76, needs to be canceled: false
+I0324 21:10:55.570558    2082 handler.go:163] cancel requested for 76 but not found
+I0324 21:10:55.699505    2082 conversation.go:799] Starting getChatIDEContext with detected intent: 
+I0324 21:10:55.699551    2082 document.go:425] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0324 21:10:55.699593    2082 ide_context.go:131] Unable to read file at /home/marty_jehng/.aiexclude
+/home/marty_jehng
+file:///home/marty_jehng
+I0324 21:10:55.699608    2082 conversation.go:836] Unable to retrieve excluded files for request #86: open /home/marty_jehng/.aiexclude: no such file or directory
+I0324 21:10:55.699657    2082 rag_cache.go:821] Retrieving and scoring colocated and open files
+I0324 21:10:55.699667    2082 rag_cache.go:851] rerankByLangBoost=0
+Completion Provider - completion # 6 - New completion requested from language client at position {"line":44,"character":0}, triggerKind=1
+I0324 21:10:55.823358    2082 document.go:425] OtherEditType (DELETE), returning ReasonRecentlyEdited
+I0324 21:10:55.880419    2082 conversation.go:799] Starting getChatIDEContext with detected intent: 
+I0324 21:10:55.880460    2082 document.go:425] OtherEditType (DELETE), returning ReasonRecentlyEdited
+I0324 21:10:55.880501    2082 ide_context.go:131] Unable to read file at /home/marty_jehng/.aiexclude
+/home/marty_jehng
+file:///home/marty_jehng
+I0324 21:10:55.880515    2082 conversation.go:836] Unable to retrieve excluded files for request #89: open /home/marty_jehng/.aiexclude: no such file or directory
+I0324 21:10:55.880560    2082 rag_cache.go:821] Retrieving and scoring colocated and open files
+I0324 21:10:55.880569    2082 rag_cache.go:851] rerankByLangBoost=0
+I0324 21:10:56.123981    2082 completion.go:233] Inline suggestion requested (request #88): {TextDocumentPositionParams:{TextDocument:{URI:file:///home/marty_jehng/templates/index.html} Position:{Line:44 Character:0}} TriggerMode:0 IDESessionIndex:20250324_1 CompletionIndex:6}
+Completion Provider - completion # 6 - Completion result obtained from language client
+I0324 21:10:59.264484    2082 conversation.go:799] Starting getChatIDEContext with detected intent: 
+I0324 21:10:59.264553    2082 document.go:425] OtherEditType (DELETE), returning ReasonRecentlyEdited
+I0324 21:10:59.264589    2082 ide_context.go:131] Unable to read file at /home/marty_jehng/.aiexclude
+/home/marty_jehng
+file:///home/marty_jehng
+I0324 21:10:59.264604    2082 conversation.go:836] Unable to retrieve excluded files for request #95: open /home/marty_jehng/.aiexclude: no such file or directory
+I0324 21:10:59.264637    2082 rag_cache.go:821] Retrieving and scoring colocated and open files
+I0324 21:10:59.264646    2082 rag_cache.go:851] rerankByLangBoost=0
+I0324 21:10:59.394378    2082 life_cycle.go:297] codeReportEvery: recomputing codereport metric
+I0324 21:11:06.048074    2082 conversation.go:799] Starting getChatIDEContext with detected intent: 
+I0324 21:11:06.048120    2082 document.go:425] OtherEditType (DELETE), returning ReasonRecentlyEdited
+I0324 21:11:06.048173    2082 ide_context.go:131] Unable to read file at /home/marty_jehng/.aiexclude
+/home/marty_jehng
+file:///home/marty_jehng
+I0324 21:11:06.048189    2082 conversation.go:836] Unable to retrieve excluded files for request #102: open /home/marty_jehng/.aiexclude: no such file or directory
+I0324 21:11:06.048221    2082 rag_cache.go:821] Retrieving and scoring colocated and open files
+I0324 21:11:06.048245    2082 rag_cache.go:851] rerankByLangBoost=0
+I0324 21:11:08.022159    2082 conversation.go:799] Starting getChatIDEContext with detected intent: 
+I0324 21:11:08.022200    2082 document.go:425] OtherEditType (DELETE), returning ReasonRecentlyEdited
+I0324 21:11:08.022241    2082 ide_context.go:131] Unable to read file at /home/marty_jehng/.aiexclude
+/home/marty_jehng
+file:///home/marty_jehng
+I0324 21:11:08.022256    2082 conversation.go:836] Unable to retrieve excluded files for request #105: open /home/marty_jehng/.aiexclude: no such file or directory
+I0324 21:11:08.022289    2082 rag_cache.go:821] Retrieving and scoring colocated and open files
+I0324 21:11:08.022390    2082 rag_cache.go:851] rerankByLangBoost=0
+I0324 21:11:11.175473    2082 conversation.go:799] Starting getChatIDEContext with detected intent: 
+I0324 21:11:11.175522    2082 document.go:421] NoneEditType, returning ReasonRecentlyOpened
+I0324 21:11:11.175558    2082 ide_context.go:131] Unable to read file at /home/marty_jehng/.aiexclude
+/home/marty_jehng
+file:///home/marty_jehng
+I0324 21:11:11.175576    2082 conversation.go:836] Unable to retrieve excluded files for request #110: open /home/marty_jehng/.aiexclude: no such file or directory
+I0324 21:11:11.175641    2082 rag_cache.go:821] Retrieving and scoring colocated and open files
+I0324 21:11:11.175652    2082 rag_cache.go:851] rerankByLangBoost=0
+I0324 21:11:32.658830    2082 conversation.go:799] Starting getChatIDEContext with detected intent: 
+I0324 21:11:32.658871    2082 document.go:421] NoneEditType, returning ReasonRecentlyOpened
+I0324 21:11:32.658911    2082 ide_context.go:131] Unable to read file at /home/marty_jehng/.aiexclude
+/home/marty_jehng
+file:///home/marty_jehng
+I0324 21:11:32.658926    2082 conversation.go:836] Unable to retrieve excluded files for request #113: open /home/marty_jehng/.aiexclude: no such file or directory
+I0324 21:11:32.658990    2082 rag_cache.go:821] Retrieving and scoring colocated and open files
+I0324 21:11:32.659000    2082 rag_cache.go:851] rerankByLangBoost=0
+I0324 21:11:32.992798    2082 conversation.go:799] Starting getChatIDEContext with detected intent: 
+I0324 21:11:32.992840    2082 document.go:421] NoneEditType, returning ReasonRecentlyOpened
+I0324 21:11:32.992881    2082 ide_context.go:131] Unable to read file at /home/marty_jehng/.aiexclude
+/home/marty_jehng
+file:///home/marty_jehng
+I0324 21:11:32.992895    2082 conversation.go:836] Unable to retrieve excluded files for request #140: open /home/marty_jehng/.aiexclude: no such file or directory
+I0324 21:11:32.993043    2082 rag_cache.go:821] Retrieving and scoring colocated and open files
+I0324 21:11:32.993056    2082 rag_cache.go:851] rerankByLangBoost=0
+I0324 21:11:33.804499    2082 conversation.go:799] Starting getChatIDEContext with detected intent: 
+I0324 21:11:33.804543    2082 document.go:421] NoneEditType, returning ReasonRecentlyOpened
+I0324 21:11:33.804585    2082 ide_context.go:131] Unable to read file at /home/marty_jehng/.aiexclude
+/home/marty_jehng
+file:///home/marty_jehng
+I0324 21:11:33.804599    2082 conversation.go:836] Unable to retrieve excluded files for request #143: open /home/marty_jehng/.aiexclude: no such file or directory
+I0324 21:11:33.804663    2082 rag_cache.go:821] Retrieving and scoring colocated and open files
+I0324 21:11:33.804671    2082 rag_cache.go:851] rerankByLangBoost=0
+I0324 21:11:36.910629    2082 conversation.go:799] Starting getChatIDEContext with detected intent: 
+I0324 21:11:36.910682    2082 document.go:421] NoneEditType, returning ReasonRecentlyOpened
+I0324 21:11:36.910724    2082 ide_context.go:131] Unable to read file at /home/marty_jehng/.aiexclude
+/home/marty_jehng
+file:///home/marty_jehng
+I0324 21:11:36.910738    2082 conversation.go:836] Unable to retrieve excluded files for request #152: open /home/marty_jehng/.aiexclude: no such file or directory
+I0324 21:11:36.910799    2082 rag_cache.go:821] Retrieving and scoring colocated and open files
+I0324 21:11:36.910809    2082 rag_cache.go:851] rerankByLangBoost=0
+I0324 21:11:37.337873    2082 conversation.go:799] Starting getChatIDEContext with detected intent: 
+I0324 21:11:37.337914    2082 document.go:421] NoneEditType, returning ReasonRecentlyOpened
+I0324 21:11:37.337957    2082 ide_context.go:131] Unable to read file at /home/marty_jehng/.aiexclude
+/home/marty_jehng
+file:///home/marty_jehng
+I0324 21:11:37.337971    2082 conversation.go:836] Unable to retrieve excluded files for request #174: open /home/marty_jehng/.aiexclude: no such file or directory
+I0324 21:11:37.338055    2082 rag_cache.go:821] Retrieving and scoring colocated and open files
+I0324 21:11:37.338067    2082 rag_cache.go:851] rerankByLangBoost=0
+I0324 21:11:48.346312    2082 rag_cache.go:278] After updateCache: file:///home/marty_jehng/README-cloudshell.txt=map[COLOCATED:COLOCATED]
+I0324 21:11:48.346382    2082 rag_cache.go:278] After updateCache: file:///home/marty_jehng/main.py=map[COLOCATED:COLOCATED CURRENTLY_OPEN:CURRENTLY_OPEN]
+I0324 21:11:48.346396    2082 rag_cache.go:278] After updateCache: file:///home/marty_jehng/requirements.txt=map[COLOCATED:COLOCATED]
+I0324 21:11:48.346408    2082 rag_cache.go:278] After updateCache: file:///home/marty_jehng/script.js=map[COLOCATED:COLOCATED]
+I0324 21:11:48.346417    2082 rag_cache.go:278] After updateCache: file:///home/marty_jehng/tts.wav.txt=map[COLOCATED:COLOCATED]
+I0324 21:11:48.542807    2082 conversation.go:799] Starting getChatIDEContext with detected intent: 
+I0324 21:11:48.542854    2082 document.go:421] NoneEditType, returning ReasonRecentlyOpened
+I0324 21:11:48.542897    2082 ide_context.go:131] Unable to read file at /home/marty_jehng/.aiexclude
+/home/marty_jehng
+file:///home/marty_jehng
+I0324 21:11:48.542914    2082 conversation.go:836] Unable to retrieve excluded files for request #177: open /home/marty_jehng/.aiexclude: no such file or directory
+I0324 21:11:48.542988    2082 rag_cache.go:821] Retrieving and scoring colocated and open files
+I0324 21:11:48.542999    2082 rag_cache.go:851] rerankByLangBoost=0
+I0324 21:11:48.543068    2082 document.go:421] NoneEditType, returning ReasonRecentlyOpened
+I0324 21:11:52.228191    2082 handler.go:159] cancel was requested for: 178, needs to be canceled: false
+I0324 21:11:52.228211    2082 handler.go:163] cancel requested for 178 but not found
+I0324 21:11:52.228248    2082 handler.go:159] cancel was requested for: 179, needs to be canceled: false
+I0324 21:11:52.228256    2082 handler.go:163] cancel requested for 179 but not found
+I0324 21:11:52.598614    2082 rag_cache.go:278] After updateCache: file:///home/marty_jehng/README-cloudshell.txt=map[COLOCATED:COLOCATED]
+I0324 21:11:52.598664    2082 rag_cache.go:278] After updateCache: file:///home/marty_jehng/main%20copy.py=map[COLOCATED:COLOCATED CURRENTLY_OPEN:CURRENTLY_OPEN]
+I0324 21:11:52.598678    2082 rag_cache.go:278] After updateCache: file:///home/marty_jehng/main.py=map[COLOCATED:COLOCATED CURRENTLY_OPEN:CURRENTLY_OPEN]
+I0324 21:11:52.598689    2082 rag_cache.go:278] After updateCache: file:///home/marty_jehng/requirements.txt=map[COLOCATED:COLOCATED]
+I0324 21:11:52.598698    2082 rag_cache.go:278] After updateCache: file:///home/marty_jehng/script.js=map[COLOCATED:COLOCATED]
+I0324 21:11:52.598709    2082 rag_cache.go:278] After updateCache: file:///home/marty_jehng/tts.wav.txt=map[COLOCATED:COLOCATED]
+I0324 21:11:52.692835    2082 conversation.go:799] Starting getChatIDEContext with detected intent: 
+I0324 21:11:52.692878    2082 document.go:421] NoneEditType, returning ReasonRecentlyOpened
+I0324 21:11:52.692917    2082 ide_context.go:131] Unable to read file at /home/marty_jehng/.aiexclude
+/home/marty_jehng
+file:///home/marty_jehng
+I0324 21:11:52.692932    2082 conversation.go:836] Unable to retrieve excluded files for request #182: open /home/marty_jehng/.aiexclude: no such file or directory
+I0324 21:11:52.692957    2082 rag_cache.go:821] Retrieving and scoring colocated and open files
+I0324 21:11:52.692966    2082 rag_cache.go:851] rerankByLangBoost=0
+I0324 21:11:57.573123    2082 rag_cache.go:278] After updateCache: file:///home/marty_jehng/main.py=map[COLOCATED:COLOCATED CURRENTLY_OPEN:CURRENTLY_OPEN]
+I0324 21:11:57.573157    2082 rag_cache.go:278] After updateCache: file:///home/marty_jehng/main%20copy.py=map[COLOCATED:COLOCATED CURRENTLY_OPEN:CURRENTLY_OPEN]
+I0324 21:11:57.573170    2082 rag_cache.go:278] After updateCache: file:///home/marty_jehng/README-cloudshell.txt=map[COLOCATED:COLOCATED]
+I0324 21:11:57.573181    2082 rag_cache.go:278] After updateCache: file:///home/marty_jehng/requirements.txt=map[COLOCATED:COLOCATED]
+I0324 21:11:57.573191    2082 rag_cache.go:278] After updateCache: file:///home/marty_jehng/script.js=map[COLOCATED:COLOCATED]
+I0324 21:11:57.573199    2082 rag_cache.go:278] After updateCache: file:///home/marty_jehng/tts.wav.txt=map[COLOCATED:COLOCATED]
+I0324 21:11:57.671010    2082 conversation.go:799] Starting getChatIDEContext with detected intent: 
+I0324 21:11:57.671073    2082 document.go:421] NoneEditType, returning ReasonRecentlyOpened
+I0324 21:11:57.671116    2082 ide_context.go:131] Unable to read file at /home/marty_jehng/.aiexclude
+/home/marty_jehng
+file:///home/marty_jehng
+I0324 21:11:57.671131    2082 conversation.go:836] Unable to retrieve excluded files for request #187: open /home/marty_jehng/.aiexclude: no such file or directory
+I0324 21:11:57.671195    2082 rag_cache.go:821] Retrieving and scoring colocated and open files
+I0324 21:11:57.671205    2082 rag_cache.go:851] rerankByLangBoost=0
+I0324 21:11:57.671266    2082 document.go:421] NoneEditType, returning ReasonRecentlyOpened
+I0324 21:11:58.115041    2082 conversation.go:799] Starting getChatIDEContext with detected intent: 
+I0324 21:11:58.115084    2082 document.go:421] NoneEditType, returning ReasonRecentlyOpened
+I0324 21:11:58.115125    2082 ide_context.go:131] Unable to read file at /home/marty_jehng/.aiexclude
+/home/marty_jehng
+file:///home/marty_jehng
+I0324 21:11:58.115140    2082 conversation.go:836] Unable to retrieve excluded files for request #191: open /home/marty_jehng/.aiexclude: no such file or directory
+I0324 21:11:58.115201    2082 rag_cache.go:821] Retrieving and scoring colocated and open files
+I0324 21:11:58.115211    2082 rag_cache.go:851] rerankByLangBoost=0
+I0324 21:11:58.115269    2082 document.go:421] NoneEditType, returning ReasonRecentlyOpened
+I0324 21:12:07.073085    2082 conversation.go:799] Starting getChatIDEContext with detected intent: 
+I0324 21:12:07.073145    2082 document.go:421] NoneEditType, returning ReasonRecentlyOpened
+I0324 21:12:07.073187    2082 ide_context.go:131] Unable to read file at /home/marty_jehng/.aiexclude
+/home/marty_jehng
+file:///home/marty_jehng
+I0324 21:12:07.073203    2082 conversation.go:836] Unable to retrieve excluded files for request #218: open /home/marty_jehng/.aiexclude: no such file or directory
+I0324 21:12:07.073266    2082 rag_cache.go:821] Retrieving and scoring colocated and open files
+I0324 21:12:07.073277    2082 rag_cache.go:851] rerankByLangBoost=0
+I0324 21:12:07.073434    2082 document.go:421] NoneEditType, returning ReasonRecentlyOpened
+I0324 21:12:08.549932    2082 conversation.go:799] Starting getChatIDEContext with detected intent: 
+I0324 21:12:08.549979    2082 document.go:425] OtherEditType (DELETE), returning ReasonRecentlyEdited
+I0324 21:12:08.550049    2082 ide_context.go:131] Unable to read file at /home/marty_jehng/.aiexclude
+/home/marty_jehng
+file:///home/marty_jehng
+I0324 21:12:08.550065    2082 conversation.go:836] Unable to retrieve excluded files for request #221: open /home/marty_jehng/.aiexclude: no such file or directory
+I0324 21:12:08.550134    2082 rag_cache.go:821] Retrieving and scoring colocated and open files
+I0324 21:12:08.550145    2082 rag_cache.go:851] rerankByLangBoost=0
+I0324 21:12:08.550204    2082 document.go:421] NoneEditType, returning ReasonRecentlyOpened
+I0324 21:12:09.647605    2082 conversation.go:799] Starting getChatIDEContext with detected intent: 
+I0324 21:12:09.647643    2082 document.go:425] OtherEditType (DELETE), returning ReasonRecentlyEdited
+I0324 21:12:09.647704    2082 ide_context.go:131] Unable to read file at /home/marty_jehng/.aiexclude
+/home/marty_jehng
+file:///home/marty_jehng
+I0324 21:12:09.647722    2082 conversation.go:836] Unable to retrieve excluded files for request #226: open /home/marty_jehng/.aiexclude: no such file or directory
+I0324 21:12:09.647813    2082 rag_cache.go:821] Retrieving and scoring colocated and open files
+I0324 21:12:09.647824    2082 rag_cache.go:851] rerankByLangBoost=0
+I0324 21:12:09.647951    2082 document.go:421] NoneEditType, returning ReasonRecentlyOpened
+Completion Provider - completion # 7 - New completion requested from language client at position {"line":7,"character":0}, triggerKind=1
+I0324 21:12:10.356904    2082 document.go:425] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0324 21:12:10.418252    2082 conversation.go:799] Starting getChatIDEContext with detected intent: 
+I0324 21:12:10.418319    2082 document.go:425] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0324 21:12:10.418385    2082 ide_context.go:131] Unable to read file at /home/marty_jehng/.aiexclude
+/home/marty_jehng
+file:///home/marty_jehng
+I0324 21:12:10.418403    2082 conversation.go:836] Unable to retrieve excluded files for request #231: open /home/marty_jehng/.aiexclude: no such file or directory
+I0324 21:12:10.418487    2082 rag_cache.go:821] Retrieving and scoring colocated and open files
+I0324 21:12:10.418498    2082 rag_cache.go:851] rerankByLangBoost=0
+I0324 21:12:10.418554    2082 document.go:421] NoneEditType, returning ReasonRecentlyOpened
+I0324 21:12:10.658655    2082 completion.go:233] Inline suggestion requested (request #230): {TextDocumentPositionParams:{TextDocument:{URI:file:///home/marty_jehng/main%20copy.py} Position:{Line:7 Character:0}} TriggerMode:0 IDESessionIndex:20250324_1 CompletionIndex:7}
+I0324 21:12:10.664272    2082 rag_cache.go:821] Retrieving and scoring colocated and open files
+I0324 21:12:10.664304    2082 rag_cache.go:851] rerankByLangBoost=0
+I0324 21:12:10.664569    2082 document.go:421] NoneEditType, returning ReasonRecentlyOpened
+I0324 21:12:10.667506    2082 client.go:419] CompleteCode request: {"enablePromptEnhancement":true,"ideContext":{"currentFile":{"codeLanguage":"python","filePath":"/home/marty_jehng/main copy.py","includedReason":"CURRENTLY_OPEN","lastEdit":["UNKNOWN_EDIT","DELETE","ADD"],"segments":[{"content":"from datetime import datetime\n\nfrom flask import Flask, render_template, request, redirect, url_for, send_file, send_from_directory\nfrom werkzeug.utils import secure_filename\n\nfrom google.protobuf import wrappers_pb2\nfrom google.cloud import speech\n"},{"isSelected":true},{"content":"from google.cloud import texttospeech_v1\nfrom google.cloud import language_v2\nimport os\n\nclient = speech.SpeechClient()\nclient2 = texttospeech_v1.TextToSpeechClient()\n\ndef sample_analyze_sentiment(text_content: str = \"I am so happy and joyful.\"):\n    \"\"\"\n    Analyzes Sentiment in a string.\n\n    Args:\n      text_content: The text content to analyze.\n    \"\"\"\n\n    client = language_v2.LanguageServiceClient()\n\n    # text_content = 'I am so happy and joyful.'\n\n    # Available types: PLAIN_TEXT, HTML\n    document_type_in_plain_text = language_v2.Document.Type.PLAIN_TEXT\n\n    # Optional. If not specified, the language is automatically detected.\n    # For list of supported languages:\n    # https://cloud.google.com/natural-language/docs/languages\n    language_code = \"en\"\n    document = {\n        \"content\": text_content,\n        \"type_\": document_type_in_plain_text,\n        \"language_code\": language_code,\n    }\n\n    # Available values: NONE, UTF8, UTF16, UTF32\n    # See https://cloud.google.com/natural-language/docs/reference/rest/v2/EncodingType.\n    encoding_type = language_v2.EncodingType.UTF8\n\n    response = client.analyze_sentiment(\n        request={\"document\": document, \"encoding_type\": encoding_type}\n    )\n    # Get overall sentiment of the input document\n    print(f\"Document sentiment score: {response.document_sentiment.score}\")\n    print(f\"Document sentiment magnitude: {response.document_sentiment.magnitude}\")\n    # Get sentiment for all sentences in the document\n    for sentence in response.sentences:\n        print(f\"Sentence text: {sentence.text.content}\")\n        print(f\"Sentence sentiment score: {sentence.sentiment.score}\")\n        print(f\"Sentence sentiment magnitude: {sentence.sentiment.magnitude}\")\n\n    # Get the language of the text, which will be the same as\n    # the language specified in the request or, if not specified,\n    # the automatically-detected language.\n    print(f\"Language of the text: {response.language_code}\")\n\n    return response\n\n\napp = Flask(__name__)\n\n# Configure upload folder\nUPLOAD_FOLDER = 'uploads'\nALLOWED_EXTENSIONS = {'wav'}\napp.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER\n\nos.makedirs(UPLOAD_FOLDER, exist_ok=True)\n\ndef allowed_file(filename):\n    return '.' in filename and \\\n           filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS\n\ndef get_files():\n    files = []\n    for filename in os.listdir(UPLOAD_FOLDER):\n        if allowed_file(filename):\n            files.append(filename)\n            print(filename)\n    files.sort(reverse=True)\n    return files\n\n@app.route('/')\ndef index():\n    files = get_files()\n    return render_template('index.html', files=files)\n\n@app.route('/upload', methods=['POST'])\ndef upload_audio():\n    if 'audio_data' not in request.files:\n        flash('No audio data')\n        return redirect(request.url)\n    file = request.files['audio_data']\n    if file.filename == '':\n        flash('No selected file')\n        return redirect(request.url)\n    if file:\n        # filename = secure_filename(file.filename)\n        filename = datetime.now().strftime(\"%Y%m%d-%I%M%S%p\") + '.wav'\n        file_path = os.path.join(app.config['UPLOAD_FOLDER'], filename)\n        file.save(file_path)\n\n        #\n        #\n        # call the speech to text API\n        def sample_recognize(content):\n            audio=speech.RecognitionAudio(content=content)\n\n            config=speech.RecognitionConfig(\n            encoding=speech.RecognitionConfig.AudioEncoding.MP3,\n            sample_rate_hertz=24000,\n            language_code=\"en-US\",\n            model=\"latest_long\",\n            audio_channel_count=1,\n            enable_word_confidence=True,\n            enable_word_time_offsets=True,\n            )\n\n            operation=client.long_running_recognize(config=config, audio=audio)\n\n            response=operation.result(timeout=90)\n\n            txt = ''\n            for result in response.results:\n                txt = txt + result.alternatives[0].transcript + '\\n'\n\n            return txt\n\n        #read audio file\n        f = open(file_path,'rb')\n        data = f.read()\n        f.close()\n        #speech to text\n        text = sample_recognize(data)\n\n        #sentiment analysis on text\n        sentiment = sample_analyze_sentiment(text)\n        score = sentiment.document_sentiment.score * sentiment.document_sentiment.magnitude\n        if score \u003e 0.75:\n            text = text+\"\\nPOSITIVE\"\n        elif score \u003c -0.75:\n            text = text+\"\\nNEGATIVE\"\n        else:\n            text = text+\"\\nNEUTRAL\"\n\n        # Save transcript to same filename but .txt\n        f = open('uploads/'+filename+'.txt','w')\n        f.write(text)\n        f.close()\n        #\n        #\n\n    return redirect('/') #success\n\n@app.route('/upload/\u003cfilename\u003e')\ndef get_file(filename):\n    return send_file(filename)\n\n    \n@app.route('/upload_text', methods=['POST'])\ndef upload_text():\n    text = request.form['text']\n    print(text)\n    #\n    #\n    # Modify this block to call the text to speech API\n    # text to speech function\n    def sample_synthesize_speech(text=None, ssml=None):\n        input = texttospeech_v1.SynthesisInput()\n        if ssml:\n            input.ssml = ssml\n        else:\n            input.text = text\n\n        voice = texttospeech_v1.VoiceSelectionParams()\n        voice.language_code = \"en-UK\"\n        # voice.ssml_gender = \"MALE\"\n\n        audio_config = texttospeech_v1.AudioConfig()\n        audio_config.audio_encoding = \"LINEAR16\"\n\n        request = texttospeech_v1.SynthesizeSpeechRequest(\n            input=input,\n            voice=voice,\n            audio_config=audio_config,\n        )\n        response = client2.synthesize_speech(request=request)\n        return response.audio_content\n\n    # Save the output as a audio file in the 'tts' directory \n    wav = sample_synthesize_speech(text)\n\n    filename = 'tts_'+datetime.now().strftime(\"%Y%m%d-%I%M%S%p\") + '.wav'\n    file_path = os.path.join(app.config['UPLOAD_FOLDER'], filename)\n\n    # save audio\n    f = open(file_path,'wb')\n    f.write(wav)\n    f.close()\n    #run sentiment analysis and save text\n    sentiment = sample_analyze_sentiment(text)\n    score = sentiment.document_sentiment.score * sentiment.document_sentiment.magnitude\n    if score \u003e 0.75:\n        text = text+\"\\nPOSITIVE\"\n    elif score \u003c -0.75:\n        text = text+\"\\nNEGATIVE\"\n    else:\n        text = text+\"\\nNEUTRAL\"\n    f = open(file_path+'.txt','w')\n    f.write(text)\n    f.close()\n\n    # Display the audio files at the bottom and allow the user to listen to them\n\n    return redirect('/') #success\n\n@app.route('/script.js',methods=['GET'])\ndef scripts_js():\n    return send_file('./script.js')\n\n@app.route('/uploads/\u003cfilename\u003e')\ndef uploaded_file(filename):\n    return send_from_directory(app.config['UPLOAD_FOLDER'], filename)\n\n@app.route('/\u003cfilename\u003e')\ndef tts_file(filename):\n    return send_from_directory(os.getcwd(), filename)\n\nif __name__ == '__main__':\n    app.run(debug=True)"}]},"otherFiles":[{"codeLanguage":"python","filePath":"/home/marty_jehng/main.py","includedReason":"RECENTLY_OPENED","segments":[{"content":"from datetime import datetime\n\nfrom flask import Flask, render_template, request, redirect, url_for, send_file, send_from_directory\nfrom werkzeug.utils import secure_filename\nfrom google.cloud import speech\nfrom google.protobuf import wrappers_pb2\nfrom google.cloud import texttospeech_v1\nfrom google.cloud import language_v2\nimport os\n\nclient = speech.SpeechClient()\nclient2 = texttospeech_v1.TextToSpeechClient()\n\ndef sample_analyze_sentiment(text_content: str = \"I am so happy and joyful.\"):\n    \"\"\"\n    Analyzes Sentiment in a string.\n\n    Args:\n      text_content: The text content to analyze.\n    \"\"\"\n\n    client = language_v2.LanguageServiceClient()\n\n    # text_content = 'I am so happy and joyful.'\n\n    # Available types: PLAIN_TEXT, HTML\n    document_type_in_plain_text = language_v2.Document.Type.PLAIN_TEXT\n\n    # Optional. If not specified, the language is automatically detected.\n    # For list of supported languages:\n    # https://cloud.google.com/natural-language/docs/languages\n    language_code = \"en\"\n    document = {\n        \"content\": text_content,\n        \"type_\": document_type_in_plain_text,\n        \"language_code\": language_code,\n    }\n\n    # Available values: NONE, UTF8, UTF16, UTF32\n    # See https://cloud.google.com/natural-language/docs/reference/rest/v2/EncodingType.\n    encoding_type = language_v2.EncodingType.UTF8\n\n    response = client.analyze_sentiment(\n        request={\"document\": document, \"encoding_type\": encoding_type}\n    )\n    # Get overall sentiment of the input document\n    print(f\"Document sentiment score: {response.document_sentiment.score}\")\n    print(f\"Document sentiment magnitude: {response.document_sentiment.magnitude}\")\n    # Get sentiment for all sentences in the document\n    for sentence in response.sentences:\n        print(f\"Sentence text: {sentence.text.content}\")\n        print(f\"Sentence sentiment score: {sentence.sentiment.score}\")\n        print(f\"Sentence sentiment magnitude: {sentence.sentiment.magnitude}\")\n\n    # Get the language of the text, which will be the same as\n    # the language specified in the request or, if not specified,\n    # the automatically-detected language.\n    print(f\"Language of the text: {response.language_code}\")\n\n    return response\n\n\napp = Flask(__name__)\n\n# Configure upload folder\nUPLOAD_FOLDER = 'uploads'\nALLOWED_EXTENSIONS = {'wav'}\napp.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER\n\nos.makedirs(UPLOAD_FOLDER, exist_ok=True)\n\ndef allowed_file(filename):\n    return '.' in filename and \\\n           filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS\n\ndef get_files():\n    files = []\n    for filename in os.listdir(UPLOAD_FOLDER):\n        if allowed_file(filename):\n            files.append(filename)\n            print(filename)\n    files.sort(reverse=True)\n    return files\n\n@app.route('/')\ndef index():\n    files = get_files()\n    return render_template('index.html', files=files)\n\n@app.route('/upload', methods=['POST'])\ndef upload_audio():\n    if 'audio_data' not in request.files:\n        flash('No audio data')\n        return redirect(request.url)\n    file = request.files['audio_data']\n    if file.filename == '':\n        flash('No selected file')\n        return redirect(request.url)\n    if file:\n        # filename = secure_filename(file.filename)\n        filename = datetime.now().strftime(\"%Y%m%d-%I%M%S%p\") + '.wav'\n        file_path = os.path.join(app.config['UPLOAD_FOLDER'], filename)\n        file.save(file_path)\n\n        #\n        #\n        # call the speech to text API\n        def sample_recognize(content):\n            audio=speech.RecognitionAudio(content=content)\n\n            config=speech.RecognitionConfig(\n            encoding=speech.RecognitionConfig.AudioEncoding.MP3,\n            sample_rate_hertz=24000,\n            language_code=\"en-US\",\n            model=\"latest_long\",\n            audio_channel_count=1,\n            enable_word_confidence=True,\n            enable_word_time_offsets=True,\n            )\n\n            operation=client.long_running_recognize(config=config, audio=audio)\n\n            response=operation.result(timeout=90)\n\n            txt = ''\n            for result in response.results:\n                txt = txt + result.alternatives[0].transcript + '\\n'\n\n            return txt\n\n        #read audio file\n        f = open(file_path,'rb')\n        data = f.read()\n        f.close()\n        #speech to text\n        text = sample_recognize(data)\n\n        #sentiment analysis on text\n        sentiment = sample_analyze_sentiment(text)\n        score = sentiment.document_sentiment.score * sentiment.document_sentiment.magnitude\n        if score \u003e 0.75:\n            text = text+\"\\nPOSITIVE\"\n        elif score \u003c -0.75:\n            text = text+\"\\nNEGATIVE\"\n        else:\n            text = text+\"\\nNEUTRAL\"\n\n        # Save transcript to same filename but .txt\n        f = open('uploads/'+filename+'.txt','w')\n        f.write(text)\n        f.close()\n        #\n        #\n\n    return redirect('/') #success\n\n@app.route('/upload/\u003cfilename\u003e')\ndef get_file(filename):\n    return send_file(filename)\n\n    \n@app.route('/upload_text', methods=['POST'])\ndef upload_text():\n    text = request.form['text']\n    print(text)\n    #\n    #\n    # Modify this block to call the text to speech API\n    # text to speech function\n    def sample_synthesize_speech(text=None, ssml=None):\n        input = texttospeech_v1.SynthesisInput()\n        if ssml:\n            input.ssml = ssml\n        else:\n            input.text = text\n\n        voice = texttospeech_v1.VoiceSelectionParams()\n        voice.language_code = \"en-UK\"\n        # voice.ssml_gender = \"MALE\"\n\n        audio_config = texttospeech_v1.AudioConfig()\n        audio_config.audio_encoding = \"LINEAR16\"\n\n        request = texttospeech_v1.SynthesizeSpeechRequest(\n            input=input,\n            voice=voice,\n            audio_config=audio_config,\n        )\n        response = client2.synthesize_speech(request=request)\n        return response.audio_content\n\n    # Save the output as a audio file in the 'tts' directory \n    wav = sample_synthesize_speech(text)\n\n    filename = 'tts_'+datetime.now().strftime(\"%Y%m%d-%I%M%S%p\") + '.wav'\n    file_path = os.path.join(app.config['UPLOAD_FOLDER'], filename)\n\n    # save audio\n    f = open(file_path,'wb')\n    f.write(wav)\n    f.close()\n    #run sentiment analysis and save text\n    sentiment = sample_analyze_sentiment(text)\n    score = sentiment.document_sentiment.score * sentiment.document_sentiment.magnitude\n    if score \u003e 0.75:\n        text = text+\"\\nPOSITIVE\"\n    elif score \u003c -0.75:\n        text = text+\"\\nNEGATIVE\"\n    else:\n        text = text+\"\\nNEUTRAL\"\n    f = open(file_path+'.txt','w')\n    f.write(text)\n    f.close()\n\n    # Display the audio files at the bottom and allow the user to listen to them\n\n    return redirect('/') #success\n\n@app.route('/script.js',methods=['GET'])\ndef scripts_js():\n    return send_file('./script.js')\n\n@app.route('/uploads/\u003cfilename\u003e')\ndef uploaded_file(filename):\n    return send_from_directory(app.config['UPLOAD_FOLDER'], filename)\n\n@app.route('/\u003cfilename\u003e')\ndef tts_file(filename):\n    return send_from_directory(os.getcwd(), filename)\n\nif __name__ == '__main__':\n    app.run(debug=True)"}]}]},"metadata":{"ideType":"CLOUD_SHELL","ideVersion":"1.94.2-cde","platform":"LINUX_AMD64","pluginType":"CLOUD_CODE","pluginVersion":"2.27.0"},"project":"cloudshell-gca","requestId":"cloudcode-728935864-3478c270-edb1-4257-ae9e-329ca635fe03"}
+I0324 21:12:10.954773    2082 completion.go:517] Code complete response for request #230 after post-processing: &{Suggestions:[] TraceID:773cbc574e3ae23b RequestID:cloudcode-728935864-3478c270-edb1-4257-ae9e-329ca635fe03 ServerTiming:gfet5t7;dur=225, gfet4t7; dur=282 NetPlusServerTiming:287.100418ms FromCache:false Typeover:false TriggerMode:0 ProcessingDetails:{RagStatus:RAG_NOT_FOUND AtlasExperience:9e31955f0372ed1f PromptID: CompletionMethod:0 ExperimentDebugStringFingerprint: ModelURI:}}
+Received completion response from language server with 0 valid responses and 0 responses that have been filtered out
+Completion Provider - completion # 7 - Completion result obtained from language client
+I0324 21:12:12.381879    2082 conversation.go:799] Starting getChatIDEContext with detected intent: 
+I0324 21:12:12.381926    2082 document.go:425] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0324 21:12:12.381971    2082 ide_context.go:131] Unable to read file at /home/marty_jehng/.aiexclude
+/home/marty_jehng
+file:///home/marty_jehng
+I0324 21:12:12.381987    2082 conversation.go:836] Unable to retrieve excluded files for request #234: open /home/marty_jehng/.aiexclude: no such file or directory
+I0324 21:12:12.382068    2082 rag_cache.go:821] Retrieving and scoring colocated and open files
+I0324 21:12:12.382080    2082 rag_cache.go:851] rerankByLangBoost=0
+I0324 21:12:12.382140    2082 document.go:421] NoneEditType, returning ReasonRecentlyOpened
+Completion Provider - completion # 8 - New completion requested from language client at position {"line":3,"character":42}, triggerKind=1
+I0324 21:12:12.460468    2082 document.go:425] OtherEditType (DELETE), returning ReasonRecentlyEdited
+I0324 21:12:12.559254    2082 conversation.go:799] Starting getChatIDEContext with detected intent: 
+I0324 21:12:12.559301    2082 document.go:425] OtherEditType (DELETE), returning ReasonRecentlyEdited
+I0324 21:12:12.559524    2082 ide_context.go:131] Unable to read file at /home/marty_jehng/.aiexclude
+/home/marty_jehng
+file:///home/marty_jehng
+I0324 21:12:12.559544    2082 conversation.go:836] Unable to retrieve excluded files for request #240: open /home/marty_jehng/.aiexclude: no such file or directory
+I0324 21:12:12.559730    2082 rag_cache.go:821] Retrieving and scoring colocated and open files
+I0324 21:12:12.559742    2082 rag_cache.go:851] rerankByLangBoost=0
+I0324 21:12:12.560325    2082 document.go:421] NoneEditType, returning ReasonRecentlyOpened
+I0324 21:12:12.711001    2082 handler.go:159] cancel was requested for: 236, needs to be canceled: true
+I0324 21:12:12.811015    2082 conversation.go:799] Starting getChatIDEContext with detected intent: 
+I0324 21:12:12.811082    2082 document.go:425] OtherEditType (DELETE), returning ReasonRecentlyEdited
+I0324 21:12:12.811139    2082 ide_context.go:131] Unable to read file at /home/marty_jehng/.aiexclude
+/home/marty_jehng
+file:///home/marty_jehng
+I0324 21:12:12.811155    2082 conversation.go:836] Unable to retrieve excluded files for request #242: open /home/marty_jehng/.aiexclude: no such file or directory
+I0324 21:12:12.811220    2082 rag_cache.go:821] Retrieving and scoring colocated and open files
+I0324 21:12:12.811230    2082 rag_cache.go:851] rerankByLangBoost=0
+I0324 21:12:12.811288    2082 document.go:421] NoneEditType, returning ReasonRecentlyOpened
+I0324 21:12:17.718814    2082 conversation.go:799] Starting getChatIDEContext with detected intent: 
+I0324 21:12:17.718861    2082 document.go:425] OtherEditType (DELETE), returning ReasonRecentlyEdited
+I0324 21:12:17.718906    2082 ide_context.go:131] Unable to read file at /home/marty_jehng/.aiexclude
+/home/marty_jehng
+file:///home/marty_jehng
+I0324 21:12:17.718921    2082 conversation.go:836] Unable to retrieve excluded files for request #264: open /home/marty_jehng/.aiexclude: no such file or directory
+I0324 21:12:17.718981    2082 rag_cache.go:821] Retrieving and scoring colocated and open files
+I0324 21:12:17.718991    2082 rag_cache.go:851] rerankByLangBoost=0
+I0324 21:12:17.719061    2082 document.go:421] NoneEditType, returning ReasonRecentlyOpened
+Completion Provider - completion # 9 - New completion requested from language client at position {"line":5,"character":0}, triggerKind=1
+I0324 21:12:18.555884    2082 document.go:425] OtherEditType (DELETE), returning ReasonRecentlyEdited
+I0324 21:12:18.617117    2082 conversation.go:799] Starting getChatIDEContext with detected intent: 
+I0324 21:12:18.617173    2082 document.go:425] OtherEditType (DELETE), returning ReasonRecentlyEdited
+I0324 21:12:18.617215    2082 ide_context.go:131] Unable to read file at /home/marty_jehng/.aiexclude
+/home/marty_jehng
+file:///home/marty_jehng
+I0324 21:12:18.617230    2082 conversation.go:836] Unable to retrieve excluded files for request #267: open /home/marty_jehng/.aiexclude: no such file or directory
+I0324 21:12:18.617419    2082 rag_cache.go:821] Retrieving and scoring colocated and open files
+I0324 21:12:18.617456    2082 rag_cache.go:851] rerankByLangBoost=0
+I0324 21:12:18.617524    2082 document.go:421] NoneEditType, returning ReasonRecentlyOpened
+I0324 21:12:18.857080    2082 completion.go:233] Inline suggestion requested (request #266): {TextDocumentPositionParams:{TextDocument:{URI:file:///home/marty_jehng/main%20copy.py} Position:{Line:5 Character:0}} TriggerMode:0 IDESessionIndex:20250324_1 CompletionIndex:9}
+Completion Provider - completion # 9 - Completion result obtained from language client
+Completion Provider - completion # 10 - New completion requested from language client at position {"line":4,"character":40}, triggerKind=1
+I0324 21:12:19.154043    2082 document.go:425] OtherEditType (DELETE), returning ReasonRecentlyEdited
+I0324 21:12:19.233178    2082 conversation.go:799] Starting getChatIDEContext with detected intent: 
+I0324 21:12:19.233231    2082 document.go:425] OtherEditType (DELETE), returning ReasonRecentlyEdited
+I0324 21:12:19.233274    2082 ide_context.go:131] Unable to read file at /home/marty_jehng/.aiexclude
+/home/marty_jehng
+file:///home/marty_jehng
+I0324 21:12:19.233300    2082 conversation.go:836] Unable to retrieve excluded files for request #270: open /home/marty_jehng/.aiexclude: no such file or directory
+I0324 21:12:19.233392    2082 rag_cache.go:821] Retrieving and scoring colocated and open files
+I0324 21:12:19.233404    2082 rag_cache.go:851] rerankByLangBoost=0
+I0324 21:12:19.233463    2082 document.go:421] NoneEditType, returning ReasonRecentlyOpened
+I0324 21:12:19.454882    2082 completion.go:233] Inline suggestion requested (request #269): {TextDocumentPositionParams:{TextDocument:{URI:file:///home/marty_jehng/main%20copy.py} Position:{Line:4 Character:40}} TriggerMode:0 IDESessionIndex:20250324_1 CompletionIndex:10}
+Completion Provider - completion # 10 - Completion result obtained from language client
+I0324 21:12:27.925094    2082 conversation.go:799] Starting getChatIDEContext with detected intent: 
+I0324 21:12:27.925158    2082 document.go:425] OtherEditType (DELETE), returning ReasonRecentlyEdited
+I0324 21:12:27.925202    2082 ide_context.go:131] Unable to read file at /home/marty_jehng/.aiexclude
+/home/marty_jehng
+file:///home/marty_jehng
+I0324 21:12:27.925219    2082 conversation.go:836] Unable to retrieve excluded files for request #274: open /home/marty_jehng/.aiexclude: no such file or directory
+I0324 21:12:27.925292    2082 rag_cache.go:821] Retrieving and scoring colocated and open files
+I0324 21:12:27.925302    2082 rag_cache.go:851] rerankByLangBoost=0
+I0324 21:12:27.925401    2082 document.go:421] NoneEditType, returning ReasonRecentlyOpened
+I0324 21:12:28.040138    2082 conversation.go:799] Starting getChatIDEContext with detected intent: 
+I0324 21:12:28.040183    2082 document.go:425] OtherEditType (DELETE), returning ReasonRecentlyEdited
+I0324 21:12:28.040227    2082 ide_context.go:131] Unable to read file at /home/marty_jehng/.aiexclude
+/home/marty_jehng
+file:///home/marty_jehng
+I0324 21:12:28.040241    2082 conversation.go:836] Unable to retrieve excluded files for request #276: open /home/marty_jehng/.aiexclude: no such file or directory
+I0324 21:12:28.040305    2082 rag_cache.go:821] Retrieving and scoring colocated and open files
+I0324 21:12:28.040315    2082 rag_cache.go:851] rerankByLangBoost=0
+I0324 21:12:28.040413    2082 document.go:421] NoneEditType, returning ReasonRecentlyOpened
+I0324 21:12:30.079808    2082 conversation.go:799] Starting getChatIDEContext with detected intent: 
+I0324 21:12:30.079851    2082 document.go:425] OtherEditType (DELETE), returning ReasonRecentlyEdited
+I0324 21:12:30.079893    2082 ide_context.go:131] Unable to read file at /home/marty_jehng/.aiexclude
+/home/marty_jehng
+file:///home/marty_jehng
+I0324 21:12:30.079910    2082 conversation.go:836] Unable to retrieve excluded files for request #279: open /home/marty_jehng/.aiexclude: no such file or directory
+I0324 21:12:30.079977    2082 rag_cache.go:821] Retrieving and scoring colocated and open files
+I0324 21:12:30.079986    2082 rag_cache.go:851] rerankByLangBoost=0
+I0324 21:12:30.080048    2082 document.go:421] NoneEditType, returning ReasonRecentlyOpened
+I0324 21:12:30.459058    2082 conversation.go:799] Starting getChatIDEContext with detected intent: 
+I0324 21:12:30.459103    2082 document.go:425] OtherEditType (DELETE), returning ReasonRecentlyEdited
+I0324 21:12:30.459144    2082 ide_context.go:131] Unable to read file at /home/marty_jehng/.aiexclude
+/home/marty_jehng
+file:///home/marty_jehng
+I0324 21:12:30.459160    2082 conversation.go:836] Unable to retrieve excluded files for request #304: open /home/marty_jehng/.aiexclude: no such file or directory
+I0324 21:12:30.459224    2082 rag_cache.go:821] Retrieving and scoring colocated and open files
+I0324 21:12:30.459235    2082 rag_cache.go:851] rerankByLangBoost=0
+I0324 21:12:30.459315    2082 document.go:421] NoneEditType, returning ReasonRecentlyOpened
+I0324 21:12:32.419506    2082 handler.go:159] cancel was requested for: 306, needs to be canceled: false
+I0324 21:12:32.419542    2082 handler.go:163] cancel requested for 306 but not found
+Completion Provider - completion # 11 - New completion requested from language client at position {"line":7,"character":0}, triggerKind=1
+I0324 21:12:32.447755    2082 document.go:425] OtherEditType (DELETE), returning ReasonRecentlyEdited
+I0324 21:12:32.547775    2082 conversation.go:799] Starting getChatIDEContext with detected intent: 
+I0324 21:12:32.547830    2082 document.go:425] OtherEditType (DELETE), returning ReasonRecentlyEdited
+I0324 21:12:32.547872    2082 ide_context.go:131] Unable to read file at /home/marty_jehng/.aiexclude
+/home/marty_jehng
+file:///home/marty_jehng
+I0324 21:12:32.547887    2082 conversation.go:836] Unable to retrieve excluded files for request #310: open /home/marty_jehng/.aiexclude: no such file or directory
+I0324 21:12:32.547945    2082 rag_cache.go:821] Retrieving and scoring colocated and open files
+I0324 21:12:32.547959    2082 rag_cache.go:851] rerankByLangBoost=0
+I0324 21:12:32.548018    2082 document.go:421] NoneEditType, returning ReasonRecentlyOpened
+I0324 21:12:32.630963    2082 handler.go:159] cancel was requested for: 309, needs to be canceled: true
+Completion Provider - completion # 12 - New completion requested from language client at position {"line":7,"character":0}, triggerKind=1
+I0324 21:12:32.671264    2082 document.go:425] OtherEditType (DELETE), returning ReasonRecentlyEdited
+I0324 21:12:32.972314    2082 completion.go:233] Inline suggestion requested (request #311): {TextDocumentPositionParams:{TextDocument:{URI:file:///home/marty_jehng/main%20copy.py} Position:{Line:7 Character:0}} TriggerMode:0 IDESessionIndex:20250324_1 CompletionIndex:12}
+Completion Provider - completion # 12 - Completion result obtained from language client
+I0324 21:12:38.975624    2082 conversation.go:799] Starting getChatIDEContext with detected intent: 
+I0324 21:12:38.975675    2082 document.go:425] OtherEditType (DELETE), returning ReasonRecentlyEdited
+I0324 21:12:38.975719    2082 ide_context.go:131] Unable to read file at /home/marty_jehng/.aiexclude
+/home/marty_jehng
+file:///home/marty_jehng
+I0324 21:12:38.975735    2082 conversation.go:836] Unable to retrieve excluded files for request #315: open /home/marty_jehng/.aiexclude: no such file or directory
+I0324 21:12:38.975799    2082 rag_cache.go:821] Retrieving and scoring colocated and open files
+I0324 21:12:38.975810    2082 rag_cache.go:851] rerankByLangBoost=0
+I0324 21:12:38.975872    2082 document.go:421] NoneEditType, returning ReasonRecentlyOpened
+I0324 21:12:39.136589    2082 conversation.go:799] Starting getChatIDEContext with detected intent: 
+I0324 21:12:39.136643    2082 document.go:425] OtherEditType (DELETE), returning ReasonRecentlyEdited
+I0324 21:12:39.136686    2082 ide_context.go:131] Unable to read file at /home/marty_jehng/.aiexclude
+/home/marty_jehng
+file:///home/marty_jehng
+I0324 21:12:39.136701    2082 conversation.go:836] Unable to retrieve excluded files for request #317: open /home/marty_jehng/.aiexclude: no such file or directory
+I0324 21:12:39.136760    2082 rag_cache.go:821] Retrieving and scoring colocated and open files
+I0324 21:12:39.136770    2082 rag_cache.go:851] rerankByLangBoost=0
+I0324 21:12:39.136833    2082 document.go:421] NoneEditType, returning ReasonRecentlyOpened
+Completion Provider - completion # 13 - New completion requested from language client at position {"line":8,"character":0}, triggerKind=1
+I0324 21:12:39.628019    2082 document.go:425] OtherEditType (DELETE), returning ReasonRecentlyEdited
+I0324 21:12:39.700558    2082 conversation.go:799] Starting getChatIDEContext with detected intent: 
+I0324 21:12:39.700614    2082 document.go:425] OtherEditType (DELETE), returning ReasonRecentlyEdited
+I0324 21:12:39.700658    2082 ide_context.go:131] Unable to read file at /home/marty_jehng/.aiexclude
+/home/marty_jehng
+file:///home/marty_jehng
+I0324 21:12:39.700674    2082 conversation.go:836] Unable to retrieve excluded files for request #321: open /home/marty_jehng/.aiexclude: no such file or directory
+I0324 21:12:39.700730    2082 rag_cache.go:821] Retrieving and scoring colocated and open files
+I0324 21:12:39.700740    2082 rag_cache.go:851] rerankByLangBoost=0
+I0324 21:12:39.700793    2082 document.go:421] NoneEditType, returning ReasonRecentlyOpened
+I0324 21:12:39.928431    2082 completion.go:233] Inline suggestion requested (request #320): {TextDocumentPositionParams:{TextDocument:{URI:file:///home/marty_jehng/main%20copy.py} Position:{Line:8 Character:0}} TriggerMode:0 IDESessionIndex:20250324_1 CompletionIndex:13}
+Completion Provider - completion # 13 - Completion result obtained from language client
+I0324 21:13:08.164055    2082 handler.go:159] cancel was requested for: 329, needs to be canceled: false
+I0324 21:13:08.164087    2082 handler.go:163] cancel requested for 329 but not found
+I0324 21:13:31.331025    2082 conversation.go:799] Starting getChatIDEContext with detected intent: 
+I0324 21:13:31.331087    2082 document.go:425] OtherEditType (DELETE), returning ReasonRecentlyEdited
+I0324 21:13:31.331132    2082 ide_context.go:131] Unable to read file at /home/marty_jehng/.aiexclude
+/home/marty_jehng
+file:///home/marty_jehng
+I0324 21:13:31.331151    2082 conversation.go:836] Unable to retrieve excluded files for request #334: open /home/marty_jehng/.aiexclude: no such file or directory
+I0324 21:13:31.331246    2082 rag_cache.go:821] Retrieving and scoring colocated and open files
+I0324 21:13:31.331257    2082 rag_cache.go:851] rerankByLangBoost=0
+I0324 21:13:31.331310    2082 document.go:421] NoneEditType, returning ReasonRecentlyOpened
+I0324 21:13:32.324207    2082 conversation.go:799] Starting getChatIDEContext with detected intent: 
+I0324 21:13:32.324252    2082 document.go:425] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0324 21:13:32.324296    2082 ide_context.go:131] Unable to read file at /home/marty_jehng/.aiexclude
+/home/marty_jehng
+file:///home/marty_jehng
+I0324 21:13:32.324469    2082 conversation.go:836] Unable to retrieve excluded files for request #337: open /home/marty_jehng/.aiexclude: no such file or directory
+I0324 21:13:32.324545    2082 rag_cache.go:821] Retrieving and scoring colocated and open files
+I0324 21:13:32.324557    2082 rag_cache.go:851] rerankByLangBoost=0
+I0324 21:13:32.324624    2082 document.go:421] NoneEditType, returning ReasonRecentlyOpened
+I0324 21:13:32.472126    2082 conversation.go:799] Starting getChatIDEContext with detected intent: 
+I0324 21:13:32.472170    2082 document.go:425] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0324 21:13:32.472220    2082 ide_context.go:131] Unable to read file at /home/marty_jehng/.aiexclude
+/home/marty_jehng
+file:///home/marty_jehng
+I0324 21:13:32.472236    2082 conversation.go:836] Unable to retrieve excluded files for request #339: open /home/marty_jehng/.aiexclude: no such file or directory
+I0324 21:13:32.472302    2082 rag_cache.go:821] Retrieving and scoring colocated and open files
+I0324 21:13:32.472312    2082 rag_cache.go:851] rerankByLangBoost=0
+I0324 21:13:32.472397    2082 document.go:421] NoneEditType, returning ReasonRecentlyOpened
+I0324 21:13:32.667096    2082 conversation.go:799] Starting getChatIDEContext with detected intent: 
+I0324 21:13:32.667142    2082 document.go:425] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0324 21:13:32.667185    2082 ide_context.go:131] Unable to read file at /home/marty_jehng/.aiexclude
+/home/marty_jehng
+file:///home/marty_jehng
+I0324 21:13:32.667199    2082 conversation.go:836] Unable to retrieve excluded files for request #341: open /home/marty_jehng/.aiexclude: no such file or directory
+I0324 21:13:32.667263    2082 rag_cache.go:821] Retrieving and scoring colocated and open files
+I0324 21:13:32.667273    2082 rag_cache.go:851] rerankByLangBoost=0
+I0324 21:13:32.667376    2082 document.go:421] NoneEditType, returning ReasonRecentlyOpened
+I0324 21:13:33.007779    2082 conversation.go:799] Starting getChatIDEContext with detected intent: 
+I0324 21:13:33.007838    2082 document.go:425] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0324 21:13:33.007882    2082 ide_context.go:131] Unable to read file at /home/marty_jehng/.aiexclude
+/home/marty_jehng
+file:///home/marty_jehng
+I0324 21:13:33.007898    2082 conversation.go:836] Unable to retrieve excluded files for request #343: open /home/marty_jehng/.aiexclude: no such file or directory
+I0324 21:13:33.007959    2082 rag_cache.go:821] Retrieving and scoring colocated and open files
+I0324 21:13:33.007970    2082 rag_cache.go:851] rerankByLangBoost=0
+I0324 21:13:33.008032    2082 document.go:421] NoneEditType, returning ReasonRecentlyOpened
+I0324 21:13:33.281305    2082 conversation.go:799] Starting getChatIDEContext with detected intent: 
+I0324 21:13:33.281373    2082 document.go:425] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0324 21:13:33.281414    2082 ide_context.go:131] Unable to read file at /home/marty_jehng/.aiexclude
+/home/marty_jehng
+file:///home/marty_jehng
+I0324 21:13:33.281430    2082 conversation.go:836] Unable to retrieve excluded files for request #345: open /home/marty_jehng/.aiexclude: no such file or directory
+I0324 21:13:33.281500    2082 rag_cache.go:821] Retrieving and scoring colocated and open files
+I0324 21:13:33.281510    2082 rag_cache.go:851] rerankByLangBoost=0
+I0324 21:13:33.281569    2082 document.go:421] NoneEditType, returning ReasonRecentlyOpened
+I0324 21:13:34.220583    2082 conversation.go:799] Starting getChatIDEContext with detected intent: 
+I0324 21:13:34.220636    2082 document.go:425] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0324 21:13:34.220682    2082 ide_context.go:131] Unable to read file at /home/marty_jehng/.aiexclude
+/home/marty_jehng
+file:///home/marty_jehng
+I0324 21:13:34.220697    2082 conversation.go:836] Unable to retrieve excluded files for request #349: open /home/marty_jehng/.aiexclude: no such file or directory
+I0324 21:13:34.220845    2082 rag_cache.go:821] Retrieving and scoring colocated and open files
+I0324 21:13:34.220875    2082 rag_cache.go:851] rerankByLangBoost=0
+I0324 21:13:34.220941    2082 document.go:421] NoneEditType, returning ReasonRecentlyOpened
+I0324 21:13:59.394861    2082 life_cycle.go:297] codeReportEvery: recomputing codereport metric
+I0324 21:19:59.394258    2082 life_cycle.go:261] codeReportBasicEvery: recomputing codereportbasic metric
+I0324 21:20:00.172222    2082 handler.go:159] cancel was requested for: 351, needs to be canceled: false
+I0324 21:20:00.172244    2082 handler.go:163] cancel requested for 351 but not found
+I0324 21:20:01.030951    2082 conversation.go:799] Starting getChatIDEContext with detected intent: 
+I0324 21:20:01.030998    2082 document.go:425] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0324 21:20:01.031041    2082 ide_context.go:131] Unable to read file at /home/marty_jehng/.aiexclude
+/home/marty_jehng
+file:///home/marty_jehng
+I0324 21:20:01.031057    2082 conversation.go:836] Unable to retrieve excluded files for request #353: open /home/marty_jehng/.aiexclude: no such file or directory
+I0324 21:20:01.031151    2082 rag_cache.go:821] Retrieving and scoring colocated and open files
+I0324 21:20:01.031162    2082 rag_cache.go:851] rerankByLangBoost=0
+I0324 21:20:01.031221    2082 document.go:421] NoneEditType, returning ReasonRecentlyOpened
+I0324 21:20:01.649049    2082 conversation.go:799] Starting getChatIDEContext with detected intent: 
+I0324 21:20:01.649130    2082 document.go:425] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0324 21:20:01.649196    2082 ide_context.go:131] Unable to read file at /home/marty_jehng/.aiexclude
+/home/marty_jehng
+file:///home/marty_jehng
+I0324 21:20:01.649213    2082 conversation.go:836] Unable to retrieve excluded files for request #378: open /home/marty_jehng/.aiexclude: no such file or directory
+I0324 21:20:01.649418    2082 rag_cache.go:821] Retrieving and scoring colocated and open files
+I0324 21:20:01.649557    2082 rag_cache.go:851] rerankByLangBoost=0
+I0324 21:20:01.649746    2082 document.go:421] NoneEditType, returning ReasonRecentlyOpened
+Completion Provider - completion # 14 - New completion requested from language client at position {"line":4,"character":0}, triggerKind=1
+I0324 21:20:07.857982    2082 document.go:425] OtherEditType (DELETE), returning ReasonRecentlyEdited
+I0324 21:20:07.931574    2082 conversation.go:799] Starting getChatIDEContext with detected intent: 
+I0324 21:20:07.931619    2082 document.go:425] OtherEditType (DELETE), returning ReasonRecentlyEdited
+I0324 21:20:07.931654    2082 ide_context.go:131] Unable to read file at /home/marty_jehng/.aiexclude
+/home/marty_jehng
+file:///home/marty_jehng
+I0324 21:20:07.931671    2082 conversation.go:836] Unable to retrieve excluded files for request #382: open /home/marty_jehng/.aiexclude: no such file or directory
+I0324 21:20:07.931731    2082 rag_cache.go:821] Retrieving and scoring colocated and open files
+I0324 21:20:07.931741    2082 rag_cache.go:851] rerankByLangBoost=0
+I0324 21:20:07.931799    2082 document.go:421] NoneEditType, returning ReasonRecentlyOpened
+I0324 21:20:08.158783    2082 completion.go:233] Inline suggestion requested (request #381): {TextDocumentPositionParams:{TextDocument:{URI:file:///home/marty_jehng/main%20copy.py} Position:{Line:4 Character:0}} TriggerMode:0 IDESessionIndex:20250324_1 CompletionIndex:14}
+Completion Provider - completion # 14 - Completion result obtained from language client
+Completion Provider - completion # 15 - New completion requested from language client at position {"line":3,"character":42}, triggerKind=1
+I0324 21:20:08.491530    2082 document.go:425] OtherEditType (DELETE), returning ReasonRecentlyEdited
+I0324 21:20:08.562609    2082 conversation.go:799] Starting getChatIDEContext with detected intent: 
+I0324 21:20:08.562657    2082 document.go:425] OtherEditType (DELETE), returning ReasonRecentlyEdited
+I0324 21:20:08.562699    2082 ide_context.go:131] Unable to read file at /home/marty_jehng/.aiexclude
+/home/marty_jehng
+file:///home/marty_jehng
+I0324 21:20:08.562714    2082 conversation.go:836] Unable to retrieve excluded files for request #385: open /home/marty_jehng/.aiexclude: no such file or directory
+I0324 21:20:08.562774    2082 rag_cache.go:821] Retrieving and scoring colocated and open files
+I0324 21:20:08.562785    2082 rag_cache.go:851] rerankByLangBoost=0
+I0324 21:20:08.562839    2082 document.go:421] NoneEditType, returning ReasonRecentlyOpened
+I0324 21:20:08.791822    2082 completion.go:233] Inline suggestion requested (request #384): {TextDocumentPositionParams:{TextDocument:{URI:file:///home/marty_jehng/main%20copy.py} Position:{Line:3 Character:42}} TriggerMode:0 IDESessionIndex:20250324_1 CompletionIndex:15}
+Completion Provider - completion # 15 - Completion result obtained from language client
+I0324 21:20:59.394370    2082 life_cycle.go:297] codeReportEvery: recomputing codereport metric
