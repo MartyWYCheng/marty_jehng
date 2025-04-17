@@ -1,15 +1,22 @@
 <html>
 <head>
-    <title>Audio Recorder</title>
+    <title>Book Genie</title>
 </head>
 <body>
 
     <table style="width:100%">
         <tr>
             <td style="width:50%">
-                <h2>Record and Upload Audio</h2>
+                <h2>1. Upload Your Book</h2>
+                <form id="uploadForm" method="POST" enctype="multipart/form-data" action="/upload_pdf">
+                    <input type="file" name="pdf_data">
+                    <input type="submit" value="Upload">
+                    
+                </form>
 
-                <button id="record">Record</button>
+                <h2>2. Ask any question about your file!</h2>
+
+                <button id="record">Ask</button>
                 <button id="stop">Stop</button>
                 <span id="timer">00:00</span>
                 <audio id="audio"></audio>
@@ -18,7 +25,7 @@
                 </form>
                 <script src="script.js"></script>
                 <hl></hl>
-                <h2>Recorded Files</h2>
+                <h2>3. Listen to the response</h2>
                 <ul>
                     {% for file in files %}
                     <li> 
